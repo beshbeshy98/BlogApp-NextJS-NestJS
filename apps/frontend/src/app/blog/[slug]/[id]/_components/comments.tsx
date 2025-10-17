@@ -8,12 +8,15 @@ import { useQuery } from "@tanstack/react-query";
 import CommentCard from "./commentCard";
 import CommentPagination from "./comentPagination";
 import CommentCardSkeleton from "./commentCardSkeleton";
+import { SessionUser } from "@/lib/session";
+import AddComment from "./addComment";
 
 type Props = {
   postId: number;
+  user?:SessionUser
 };
 
-const Comments = ({ postId }: Props) => {
+const Comments = ({ postId , user}: Props) => {
   const [page, setPage] = useState(1);
 
   const { data, isLoading } = useQuery({
@@ -30,7 +33,8 @@ const Comments = ({ postId }: Props) => {
   const totalPages = Math.ceil((data?.count ?? 0) / DEFAULT_PAGE_SIZE);
   return (
     <div className="p-2 rounded-m shadow-md">
-      <div className="text-lg text-slate-700">Comments</div>
+      <h6 className="text-lg text-slate-700">Comments</h6>
+      {!!user && <AddComment user={user} postId={postId}/> }
       <div className="flex flex-col gap-4">
         {isLoading
           ? Array.from({ length: 12 }).map((_, index) => (

@@ -1,0 +1,772 @@
+
+> frontend@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.5.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://172.18.144.1:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.9s
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA0ODI4NTQsImV4cCI6MTc2MDU2OTI1NH0.TVh6LmsJ-i4qE6JjMQsFd_ul_Df50TczJF8PdWXh-x8',
+    iat: 1760482854,
+    exp: 1761087654
+  }
+}
+ GET / 200 in 8925ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=445993182986932 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5569827333288387 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6787413028101501 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=8317590227263573 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5066937205380515 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=2823107555581133 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=7350092394797008 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6525517303257616 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6104557280408858 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=1465837672786922 500
+ ○ Compiling /blog/[slug]/[id] ...
+ ✓ Compiled /blog/[slug]/[id] in 765ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 2175ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 301ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 214ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '479078778'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1095ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1154ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 471ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1728ms
+ GET /favicon.ico 200 in 760ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 365ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '479078778'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 638ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 416ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1158ms
+ GET /favicon.ico 200 in 580ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 371ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 275ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 611ms
+ ⨯ TypeError: fetch failed
+    at async fetchGraphQL (src\lib\fetchGraphQL.ts:4:20)
+    at async getPostComments (src\lib\actions\commentActions.ts:17:16)
+  2 |
+  3 | export const fetchGraphQL = async (query: string, variables = {}) => {
+> 4 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
+    |                    ^
+  5 |     method: "POST",
+  6 |     headers: {
+  7 |       "Content-Type": "application/json", {
+  digest: '729320572',
+  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1527ms
+ ⨯ TypeError: fetch failed
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 932ms
+    at async fetchGraphQL (src\lib\fetchGraphQL.ts:4:20)
+    at async getPostComments (src\lib\actions\commentActions.ts:17:16)
+  2 |
+  3 | export const fetchGraphQL = async (query: string, variables = {}) => {
+> 4 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
+    |                    ^
+  5 |     method: "POST",
+  6 |     headers: {
+  7 |       "Content-Type": "application/json", {
+  digest: '729320572',
+  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
+}
+ ⨯ TypeError: fetch failed
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 799ms
+    at async fetchGraphQL (src\lib\fetchGraphQL.ts:4:20)
+    at async getPostComments (src\lib\actions\commentActions.ts:17:16)
+  2 |
+  3 | export const fetchGraphQL = async (query: string, variables = {}) => {
+> 4 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
+    |                    ^
+  5 |     method: "POST",
+  6 |     headers: {
+  7 |       "Content-Type": "application/json", {
+  digest: '729320572',
+  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
+}
+ ⨯ TypeError: fetch failed
+    at async fetchGraphQL (src\lib\fetchGraphQL.ts:4:20)
+    at async getPostComments (src\lib\actions\commentActions.ts:17:16)
+  2 |
+  3 | export const fetchGraphQL = async (query: string, variables = {}) => {
+> 4 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
+    |                    ^
+  5 |     method: "POST",
+  6 |     headers: {
+  7 |       "Content-Type": "application/json", {
+  digest: '729320572',
+  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 771ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '479078778'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 518ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 343ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 496ms
+ GET /favicon.ico 200 in 489ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 365ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 240ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 299ms
+ ✓ Compiled in 335ms
+ ✓ Compiled /blog/[slug]/[id] in 168ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 1093ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 204ms
+ ✓ Compiled in 236ms
+ ✓ Compiled /blog/[slug]/[id] in 122ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 686ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 244ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 275ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 270ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 1440ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 324ms
+ ✓ Compiled in 254ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 360ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 194ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 343ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 185ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 182ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 170ms
+ ✓ Compiled in 172ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 549ms
+ ✓ Compiled in 145ms
+ ✓ Compiled in 659ms
+ ✓ Compiled /blog/[slug]/[id] in 187ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 882ms
+ ✓ Compiled in 115ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 153ms
+ ✓ Compiled /blog/[slug]/[id] in 158ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3252774032'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1351ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 158ms
+ GET /favicon.ico 200 in 478ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3252774032'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1492ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 363ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 228ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '4248103361'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1327ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 479ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 573ms
+ GET /favicon.ico 200 in 672ms
+ GET /favicon.ico?favicon.0b3bf435.ico 500 in 297ms
+ ⨯ Failed to generate static paths for /blog/[slug]/[id]:
+Error: Could not parse module '[project]/apps/frontend/src/app/blog/[slug]/[id]/_components/comments.tsx'
+
+Expected '</', got '}'
+    at __TURBOPACK__module__evaluation__ (src\app\blog\[slug]\[id]\page.tsx:2:1)
+    at __TURBOPACK__module__evaluation__ (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\[root-of-the-server]__e999cbb0._.js:439:47)
+  1 | import { fetchPostById } from "@/lib/actions/postActions";
+> 2 | import Image from "next/image";
+    | ^
+  3 | import SanitizedContent from "./_components/SanitizedContent";
+  4 | import Comments from "./_components/comments";
+  5 | {
+  type: 'Error',
+  code: 'MODULE_UNPARSABLE'
+}
+ ✓ Compiled in 221ms
+ ✓ Compiled /blog/[slug]/[id] in 135ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 1796ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 150ms
+ ✓ Compiled in 243ms
+ ✓ Compiled in 129ms
+ ✓ Compiled /blog/[slug]/[id] in 163ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 756ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 163ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 329ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 232ms
+ ✓ Compiled in 162ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 454ms
+ ✓ Compiled in 126ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 382ms
+ ✓ Compiled in 160ms
+ ✓ Compiled in 146ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 481ms
+ ✓ Compiled in 160ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 504ms
+ ✓ Compiled in 137ms
+ ✓ Compiled in 224ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 519ms
+ ✓ Compiled in 141ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 510ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 244ms
+ ✓ Compiled in 125ms
+ ✓ Compiled in 141ms
+ ✓ Compiled in 147ms
+ ✓ Compiled in 150ms
+ ✓ Compiled in 161ms
+ ✓ Compiled in 219ms
+ ✓ Compiled in 145ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 641ms
+ ✓ Compiled in 136ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 566ms
+ ✓ Compiled in 148ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 537ms
+ ✓ Compiled in 151ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 490ms
+ ✓ Compiled in 165ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 677ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 372ms
+ ✓ Compiled in 203ms
+ ✓ Compiled in 235ms
+ ✓ Compiled /blog/[slug]/[id] in 124ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 630ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 320ms
+ ✓ Compiled in 191ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 448ms
+ ✓ Compiled in 126ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 462ms
+ ✓ Compiled in 167ms
+ ✓ Compiled in 137ms
+ ✓ Compiled /blog/[slug]/[id] in 122ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 670ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 145ms
+ ✓ Compiled in 125ms
+ ✓ Compiled in 169ms
+ ✓ Compiled in 144ms
+ ✓ Compiled /blog/[slug]/[id] in 120ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 682ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 172ms
+ ✓ Compiled in 134ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 131ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1601ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 535ms
+ GET /favicon.ico 200 in 537ms
+ ✓ Compiled in 199ms
+ ✓ Compiled in 142ms
+ ✓ Compiled in 170ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /blog/[slug]/[id] in 272ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1787ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 438ms
+ GET /favicon.ico 200 in 447ms
+ ✓ Compiled in 130ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1389ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 317ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 468ms
+ GET /favicon.ico 200 in 459ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 466ms
+ ✓ Compiled in 168ms
+ ✓ Compiled in 142ms
+ ✓ Compiled /blog/[slug]/[id] in 118ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 649ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 270ms
+ ✓ Compiled in 133ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 153ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1315ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 519ms
+ GET /favicon.ico 200 in 501ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 115ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1304ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 771ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 366ms
+ GET /favicon.ico 200 in 481ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 494ms
+ ✓ Compiled in 236ms
+ ✓ Compiled in 157ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 617ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 170ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1093ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 289ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 454ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 197ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 529ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 423ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1156ms
+ GET /favicon.ico 200 in 567ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 364ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 153ms
+ ✓ Compiled in 75ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 482ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 271ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3585219419'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 996ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1144ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 348ms
+ GET /favicon.ico 200 in 485ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 403ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 162ms
+ ✓ Compiled in 220ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 675ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 546ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 319ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 265ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 222ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 535ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 509ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 300ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 333ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 461ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 273ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 157ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 183ms
+ ✓ Compiled in 154ms
+ ✓ Compiled in 161ms
+ ✓ Compiled in 162ms
+ ✓ Compiled in 147ms
+ ✓ Compiled in 221ms
+ ✓ Compiled /blog/[slug]/[id] in 117ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 658ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 222ms
+ ✓ Compiled in 74ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 939ms
+ POST /blog/[slug]/[id] 200 in 638ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 404 in 1814ms
+ ✓ Compiled in 163ms
+ ✓ Compiled in 167ms
+ ✓ Compiled in 142ms
+ ✓ Compiled in 177ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 624ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 174ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 178ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 166ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 162ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 161ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 149ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 157ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 161ms
+Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at PostPage (src\app\blog\[slug]\[id]\page.tsx:12:25)
+  10 | };
+  11 | const PostPage = async ({ params }: Props) => {
+> 12 |   const postId = params.id;
+     |                         ^
+  13 |   const post = await fetchPostById(+postId);
+  14 |
+  15 |   return (
+ ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
+   9 |
+  10 | const SanitizedContent = (props: Props) => {
+> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
+     |                               ^
+  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+  13 | };
+  14 | {
+  digest: '3378561226'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 1195ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 298ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 450ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 203ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 505ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 591ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 280ms

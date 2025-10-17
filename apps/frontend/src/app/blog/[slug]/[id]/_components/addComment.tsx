@@ -22,12 +22,14 @@ const AddComment = (props: Props) => {
         <DialogContent>
           <form className={cn(props.className)}>
             <Label htmlFor="comment">Your Comment</Label>
-            <Textarea name="comment" />
-            <p>
-              <span>Write as</span>
-              <span>{props.user.name}</span>
-            </p>
-            <SubmitButton>Submit</SubmitButton>
+            <div className="border-t border-x rounded-t-md">
+              <Textarea name="comment" className="border-none active:outline-none focus-visible:ring-0 shadow-none"/>
+              <p className="border rounded-b-md p-2">
+                <span className="text-slate-400">Write as </span>
+                <span className="text-slate-700">{props.user.name}</span>
+              </p>
+            </div>
+            <SubmitButton className="mt-2">Submit</SubmitButton>
           </form>
         </DialogContent>
       </Dialog>

@@ -4,6 +4,7 @@ import { fetchGraphQL } from "../fetchGraphQL";
 import { GET_POST_COMMENTS } from "../gqlQueries";
 import { print } from "graphql";
 import { CommentEntity } from "../types/modelTypes";
+import { CreateCommentFormState } from "../types/formState";
 
 export async function getPostComments({
   postId,
@@ -25,3 +26,4 @@ export async function getPostComments({
     count: data.commentPostCount as number,
   };
 }
+

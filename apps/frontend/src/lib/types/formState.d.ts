@@ -11,4 +11,15 @@ export type SignUpFormState = {
   };
   message?: string;
 };
-undefined;
+
+export type CreateCommentFormState = {
+  data: {
+    content: string;
+    postId: string;
+  };
+  errors?: {
+    content: string[];
+  };
+  ok?: boolean;
+  open?: boolean;
+};

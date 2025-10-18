@@ -10,16 +10,17 @@ export type SignUpFormState = {
     password?: string[];
   };
   message?: string;
-};
+} | undefined;
 
 export type CreateCommentFormState = {
-  data: {
-    content: string;
-    postId: string;
+  data?: {
+    content?: string;
+    postId?: string;
   };
   errors?: {
-    content: string[];
+    content?: string[];
   };
+  message?:string;
   ok?: boolean;
   open?: boolean;
-};
+} | undefined;

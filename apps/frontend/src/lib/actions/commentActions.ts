@@ -1,6 +1,6 @@
 "use server";
 
-import { fetchGraphQL } from "../fetchGraphQL";
+import { authFetchGraphQL, fetchGraphQL } from "../fetchGraphQL";
 import { CREATE_COMMENT_MUTATION, GET_POST_COMMENTS } from "../gqlQueries";
 import { print } from "graphql";
 import { CommentEntity } from "../types/modelTypes";
@@ -36,13 +36,13 @@ export async function saveComment(
     Object.fromEntries(formData.entries())
   );
 
-  if (!validatedFields)
+  if (!validatedFields.success)
     return {
       data: Object.fromEntries(formData.entries()),
       errors: validatedFields.error.flatten().fieldErrors,
     };
 
-  const data = await fetchGraphQL(print(CREATE_COMMENT_MUTATION), {
+  const data = await authFetchGraphQL(print(CREATE_COMMENT_MUTATION), {
     input: {
       ...validatedFields.data,
     },

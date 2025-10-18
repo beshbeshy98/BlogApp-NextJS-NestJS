@@ -13,13 +13,13 @@ import AddComment from "./addComment";
 
 type Props = {
   postId: number;
-  user?:SessionUser
+  user?: SessionUser;
 };
 
-const Comments = ({ postId , user}: Props) => {
+const Comments = ({ postId, user }: Props) => {
   const [page, setPage] = useState(1);
 
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, refetch } = useQuery({
     queryKey: [GET_POST_COMMENTS, postId, page],
     queryFn: async () => {
       return await getPostComments({
@@ -34,7 +34,7 @@ const Comments = ({ postId , user}: Props) => {
   return (
     <div className="p-2 rounded-m shadow-md">
       <h6 className="text-lg text-slate-700">Comments</h6>
-      {!!user && <AddComment user={user} postId={postId}/> }
+      {!!user && <AddComment user={user} postId={postId} refetch={refetch} />}
       <div className="flex flex-col gap-4">
         {isLoading
           ? Array.from({ length: 12 }).map((_, index) => (

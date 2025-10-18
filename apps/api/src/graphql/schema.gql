@@ -70,6 +70,8 @@ type Query {
 type Mutation {
   createUser(createUserInput: CreateUserInput!): User!
   createComment(createCommentInput: CreateCommentInput!): CommentEntity!
+  likePost(postId: Int!): Boolean!
+  unlikePost(postId: Int!): Boolean!
   signIn(signInInput: SignInInput!): AuthPayload!
 }
 

@@ -1,15 +1,20 @@
 "use client";
 
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 
 type Props = {
   content: string;
   className?: string;
 };
 
-const SanitizedContent = (props: Props) => {
-  const cleanHtml = DOMPurify.sanitize(props.content);
-  return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
+const SanitizedContent = ({ content, className }: Props) => {
+  const cleanHtml = DOMPurify.sanitize(content);
+  return (
+    <div
+      className={className}
+      dangerouslySetInnerHTML={{ __html: cleanHtml }}
+    />
+  );
 };
 
 export default SanitizedContent;

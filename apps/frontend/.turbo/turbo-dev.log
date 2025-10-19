@@ -4,46 +4,338 @@
 
    ▲ Next.js 15.5.4 (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://172.18.144.1:3000
+   - Network:      http://172.22.64.1:3000
    - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 5.3s
+ ✓ Ready in 3.2s
  ○ Compiling /blog/[slug]/[id] ...
- ✓ Compiled /blog/[slug]/[id] in 12.1s
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 14850ms
- ✓ Compiled in 184ms
- ✓ Compiled in 161ms
- ✓ Compiled /blog/[slug]/[id] in 191ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 583ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 531ms
- ✓ Compiled in 968ms
- ✓ Compiled in 918ms
- ✓ Compiled /blog/[slug]/[id] in 172ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 681ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 209ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 531ms
-Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-    at PostPage (src\app\blog\[slug]\[id]\page.tsx:13:25)
-  11 | };
-  12 | const PostPage = async ({ params }: Props) => {
-> 13 |   const postId = params.id;
-     |                         ^
-  14 |   const post = await fetchPostById(+postId);
-  15 |   const session = await getSession();
-  16 |
- ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
-    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
-   9 |
-  10 | const SanitizedContent = (props: Props) => {
-> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
-     |                               ^
-  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
-  13 | };
-  14 | {
-  digest: '290817115'
-}
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1?comment=s 500 in 1620ms
+ ✓ Compiled /blog/[slug]/[id] in 6.4s
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 10530ms
  ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1?comment=s 200 in 1048ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1?comment=s 200 in 194ms
+ ○ Compiling /favicon.ico ...
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 426ms
+ ✓ Compiled /favicon.ico in 842ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 344ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1379ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Unknown argument "userId" on field "Mutation.likePost".',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async likePost (src\lib\actions\likeActions.ts:21:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '3423809719'
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 870ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Unknown argument "userId" on field "Mutation.likePost".',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async likePost (src\lib\actions\likeActions.ts:21:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '3423809719'
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 687ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Unknown argument "userId" on field "Mutation.likePost".',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async likePost (src\lib\actions\likeActions.ts:21:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '3423809719'
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 628ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 211ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 217ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 257ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 239ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Unknown argument "userId" on field "Mutation.likePost".',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async likePost (src\lib\actions\likeActions.ts:21:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '3423809719'
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 823ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 228ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 213ms
+ ✓ Compiled in 163ms
+ ✓ Compiled /blog/[slug]/[id] in 170ms
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 648ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 205ms
+ ✓ Compiled in 163ms
+ ✓ Compiled /blog/[slug]/[id] in 127ms
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 574ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 367ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 237ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 260ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Unknown argument "userId" on field "Mutation.likePost".',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async likePost (src\lib\actions\likeActions.ts:21:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 988ms
+  47 |   } {
+  digest: '3423809719'
+}
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 1454ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 723ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 434ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 291ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Unknown argument "userId" on field "Mutation.likePost".',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async likePost (src\lib\actions\likeActions.ts:21:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '3423809719'
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 705ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Unknown argument "userId" on field "Mutation.likePost".',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async likePost (src\lib\actions\likeActions.ts:21:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '3423809719'
+}
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 824ms
+ ✓ Compiled in 139ms
+ ✓ Compiled /blog/[slug]/[id] in 143ms
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 691ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 200ms
+ ✓ Compiled in 153ms
+ ✓ Compiled /blog/[slug]/[id] in 201ms
+ ⨯ GraphQLError: Syntax Error: Expected "{", found "$".
+    at parseDocument (../src/index.ts:96:25)
+    at Module.gql (../src/index.ts:134:10)
+    at __TURBOPACK__module__evaluation__ (src\lib\gqlQueries.ts:85:38)
+    at __TURBOPACK__module__evaluation__ (src\lib\actions\postActions.ts:4:1)
+    at __TURBOPACK__module__evaluation__ (.next-internal\server\app\blog\[slug]\[id]\page\actions.js (server actions loader):1:1)
+    at __TURBOPACK__module__evaluation__ (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\[root-of-the-server]__35f77af6._.js:430:744)
+    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\blog\[slug]\[id]\page.js:16:3)
+  83 |   }
+  84 | `;
+> 85 | export const LIKE_POST_MUTATION = gql`
+     |                                      ^
+  86 |   mutation likePost $postId: Int!) {
+  87 |     likePost(userId: $userId, postId: $postId)
+  88 |   } {
+  path: undefined,
+  locations: [Array],
+  extensions: [Object: null prototype] {},
+  page: '/blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1'
+}
+ ⨯ Failed to generate static paths for /blog/[slug]/[id]:
+Error: Syntax Error: Expected "{", found "$".
+    at parseDocument (../src/index.ts:96:25) {
+  type: 'GraphQLError',
+  locations: [Array],
+  extensions: {}
+}
+ ⨯ Failed to generate static paths for /blog/[slug]/[id]:
+Error: Syntax Error: Expected "{", found "$".
+    at parseDocument (../src/index.ts:96:25) {
+  type: 'GraphQLError',
+  locations: [Array],
+  extensions: {}
+}
+ ⨯ GraphQLError: Syntax Error: Expected "{", found "$".
+    at parseDocument (../src/index.ts:96:25)
+    at Module.gql (../src/index.ts:134:10)
+    at __TURBOPACK__module__evaluation__ (src\lib\gqlQueries.ts:85:38)
+    at __TURBOPACK__module__evaluation__ (src\lib\actions\postActions.ts:4:1)
+    at __TURBOPACK__module__evaluation__ (.next-internal\server\app\blog\[slug]\[id]\page\actions.js (server actions loader):1:1)
+    at __TURBOPACK__module__evaluation__ (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\[root-of-the-server]__35f77af6._.js:430:744)
+    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\blog\[slug]\[id]\page.js:16:3)
+  83 |   }
+  84 | `;
+> 85 | export const LIKE_POST_MUTATION = gql`
+     |                                      ^
+  86 |   mutation likePost $postId: Int!) {
+  87 |     likePost(userId: $userId, postId: $postId)
+  88 |   } {
+  path: undefined,
+  locations: [Array],
+  extensions: [Object: null prototype] {},
+  page: '/blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2.2s
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 3139ms
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 3238ms
+ ✓ Compiled in 152ms
+ GET /favicon.ico 200 in 393ms
+ ✓ Compiled in 143ms
+ ✓ Compiled in 136ms
+ ✓ Compiled in 118ms
+ ✓ Compiled in 118ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 104ms
+ ✓ Compiled /blog/[slug]/[id] in 166ms
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 2365ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 392ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 220ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 224ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 200ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 202ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 191ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 172ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 180ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 240ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 163ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 180ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 192ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 177ms
+ ✓ Compiled in 112ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 592ms
+ ✓ Compiled in 115ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 513ms
+ ✓ Compiled in 163ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 593ms
+ ✓ Compiled in 114ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 498ms
+ ✓ Compiled in 155ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 1311ms
+ POST /blog/[slug]/[id] 200 in 417ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 404 in 1879ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 415ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 267ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 202ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 232ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 177ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 165ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 205ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 216ms
+ ○ Compiling / ...
+ ✓ Compiled / in 655ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 1842ms
+ GET /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 240ms
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 211ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 229ms
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 188ms
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 178ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=445993182986932 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6787413028101501 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5569827333288387 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=8317590227263573 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=2823107555581133 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5066937205380515 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=7350092394797008 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6104557280408858 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=1465837672786922 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6525517303257616 500
+ GET /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 262ms
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 223ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 257ms

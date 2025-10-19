@@ -4,46 +4,32 @@
 
    ▲ Next.js 15.5.4 (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://172.18.144.1:3000
+   - Network:      http://172.22.64.1:3000
    - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 5.3s
+ ✓ Ready in 2.4s
  ○ Compiling /blog/[slug]/[id] ...
- ✓ Compiled /blog/[slug]/[id] in 12.1s
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 14850ms
- ✓ Compiled in 184ms
- ✓ Compiled in 161ms
- ✓ Compiled /blog/[slug]/[id] in 191ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 583ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 531ms
- ✓ Compiled in 968ms
- ✓ Compiled in 918ms
- ✓ Compiled /blog/[slug]/[id] in 172ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 681ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 209ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 531ms
-Error: Route "/blog/[slug]/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-    at PostPage (src\app\blog\[slug]\[id]\page.tsx:13:25)
-  11 | };
-  12 | const PostPage = async ({ params }: Props) => {
-> 13 |   const postId = params.id;
-     |                         ^
-  14 |   const post = await fetchPostById(+postId);
-  15 |   const session = await getSession();
-  16 |
- ⨯ TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
-    at SanitizedContent (src\app\blog\[slug]\[id]\_components\SanitizedContent.tsx:11:31)
-   9 |
-  10 | const SanitizedContent = (props: Props) => {
-> 11 |   const cleanHtml = DOMPurify.sanitize(props.content);
-     |                               ^
-  12 |   return <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />;
-  13 | };
-  14 | {
-  digest: '290817115'
-}
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1?comment=s 500 in 1620ms
+ ✓ Compiled /blog/[slug]/[id] in 7s
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 10665ms
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 9757ms
  ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1?comment=s 200 in 1048ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1?comment=s 200 in 194ms
+ ○ Compiling /favicon.ico ...
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 306ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 348ms
+ ✓ Compiled /favicon.ico in 978ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1601ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 205ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 180ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 231ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 212ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 466ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 680ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 251ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 220ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 186ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 153ms
+ ✓ Compiled in 335ms
+ ✓ Compiled /blog/[slug]/[id] in 221ms
+ GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 1072ms
+ POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 382ms

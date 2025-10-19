@@ -3,6 +3,7 @@ import Image from "next/image";
 import SanitizedContent from "./_components/SanitizedContent";
 import Comments from "./_components/comments";
 import { getSession } from "@/lib/session";
+import Like from "./_components/like";
 
 type Props = {
   params: {
@@ -10,8 +11,9 @@ type Props = {
   };
 };
 const PostPage = async ({ params }: Props) => {
-  const postId = params.id;
-  const post = await fetchPostById(+postId);
+  const { id } = await params;
+  const postId = Number(id);
+  const post = await fetchPostById(postId);
   const session = await getSession();
 
   return (
@@ -32,7 +34,7 @@ const PostPage = async ({ params }: Props) => {
         content={post.content}
         className="prose lg:prose-xl mt-6 mx-auto"
       />
-
+      <Like postId={post.id} user={session?.user} />
       <Comments user={session?.user} postId={post.id} />
     </main>
   );

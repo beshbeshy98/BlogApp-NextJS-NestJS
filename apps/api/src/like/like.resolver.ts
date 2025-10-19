@@ -1,5 +1,5 @@
-import { Query, UseGuards } from '@nestjs/common';
-import { Args, Context, Int, Mutation, Resolver } from '@nestjs/graphql';
+import { UseGuards } from '@nestjs/common';
+import { Args, Context, Int, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { JwtAuthGuard } from 'src/auth/guards/jwt-auth/jwt-auth.guard';
 import { Like } from './entities/like.entity';
 import { LikeService } from './like.service';
@@ -10,10 +10,10 @@ export class LikeResolver {
   @UseGuards(JwtAuthGuard)
   @Mutation(() => Boolean)
   likePost(
-    @Context() Context,
+    @Context() context,
     @Args('postId', { type: () => Int }) postId: number,
   ): Promise<boolean> {
-    const userId = Context.req.user.id;
+    const userId = context.req.user.id;
     return this.likeService.likePost({ userId, postId });
   }
 
@@ -37,10 +37,10 @@ export class LikeResolver {
   @UseGuards(JwtAuthGuard)
   @Query(() => Boolean)
   userLikedPost(
-    @Context() Context,
-    @Args('postId', { type: () => number }) postId: number,
+    @Context() context,
+    @Args('postId', { type: () => Int }) postId: number,
   ) {
-    const userId = Context.req.user.id;
+    const userId = context.req.user.id;
     return this.likeService.userLikedPost({ postId, userId });
   }
 }

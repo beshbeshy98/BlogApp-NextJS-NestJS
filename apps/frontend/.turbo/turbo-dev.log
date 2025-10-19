@@ -339,3 +339,159 @@ Error: Syntax Error: Expected "{", found "$".
  POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 223ms
  ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
  POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 257ms
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 198ms
+ POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 205ms
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5569827333288387 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=445993182986932 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=8317590227263573 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6787413028101501 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5066937205380515 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=2823107555581133 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=7350092394797008 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6104557280408858 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=1465837672786922 500
+ ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6525517303257616 500
+ GET /user/create-post 404 in 224ms
+ GET /user/create-post 404 in 318ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 734ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 1098ms
+ ✓ Compiled in 174ms
+ ✓ Compiled / in 146ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 853ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 475ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 407ms
+ ✓ Compiled in 254ms
+ ✓ Compiled / in 231ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 950ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 516ms
+{
+  session: {
+    user: {
+      id: '14',
+      name: 'Mohamed Abd Elbadea',
+      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
+    iat: 1760811226,
+    exp: 1761416026
+  }
+}
+ GET / 200 in 500ms
+ ○ Compiling /user/posts ...
+ ✓ Compiled /user/posts in 1633ms
+ GET /user/posts 200 in 1923ms
+ ✓ Compiled in 765ms
+ ✓ Compiled /user/posts in 197ms
+ ⨯ [Error: The default export is not a React Component in "/user/posts/layout"]
+ ⨯ [Error: The default export is not a React Component in "/user/posts/layout"] {
+  page: '/user/posts'
+}
+ GET /user/posts 500 in 1348ms
+ ⨯ [Error: The default export is not a React Component in "/user/posts/layout"]
+ ⨯ [Error: The default export is not a React Component in "/user/posts/layout"] {
+  page: '/user/posts'
+}
+ GET /user/posts 500 in 948ms
+ GET /favicon.ico 200 in 441ms
+ ✓ Compiled in 156ms
+ ✓ Compiled /user/posts in 130ms
+ ⨯ [Error: The default export is not a React Component in "/user/posts/layout"]
+ ⨯ [Error: The default export is not a React Component in "/user/posts/layout"] {
+  page: '/user/posts'
+}
+ GET /user/posts 500 in 1428ms
+ GET /favicon.ico 200 in 442ms
+ ✓ Compiled in 178ms
+ ✓ Compiled in 140ms
+ ✓ Compiled /user/posts in 129ms
+ ⨯ Error: Failed to load chunk server/chunks/ssr/apps_frontend_src_app_user_posts_layout_tsx_b143893b._.js from runtime for chunk server/app/user/posts/page.js
+    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\user\posts\page.js:11:3) {
+  page: '/user/posts',
+  [cause]: SyntaxError: Missing initializer in const declaration
+      at <unknown> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\apps_frontend_src_app_user_posts_layout_tsx_b143893b._.js:21)

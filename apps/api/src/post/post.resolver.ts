@@ -13,8 +13,8 @@ export class PostResolver {
   @Query(() => [Post], { name: 'posts' })
   findAll(
     @Context() context,
-    @Args('skip', { nullable: true }) skip?: number,
-    @Args('take', { nullable: true }) take?: number,
+    @Args('skip', { type: () => Int, nullable: true }) skip?: number,
+    @Args('take', { type: () => Int, nullable: true }) take?: number,
   ) {
     const user = context.req.user;
     console.log({ user });
@@ -34,8 +34,8 @@ export class PostResolver {
   @Query(() => [Post])
   getUserPosts(
     @Context() context,
-    @Args('skip', { nullable: true }) skip?: number,
-    @Args('take', { nullable: true }) take?: number,
+    @Args('skip', { type: () => Int, nullable: true }) skip?: number,
+    @Args('take', { type: () => Int, nullable: true }) take?: number,
   ) {
     const userId = context.req.user.id;
     return this.postService.findByUser({
@@ -49,6 +49,6 @@ export class PostResolver {
   @Query(() => Int)
   userPostCount(@Context() context) {
     const userId = context.req.user.id;
-    return this.postService.userPostCount(userId)
+    return this.postService.userPostCount(userId);
   }
 }

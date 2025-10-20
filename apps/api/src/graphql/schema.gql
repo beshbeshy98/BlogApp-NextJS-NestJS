@@ -60,10 +60,10 @@ type AuthPayload {
 }
 
 type Query {
-  posts(skip: Float, take: Float): [Post!]!
+  posts(skip: Int, take: Int): [Post!]!
   postCount: Int!
   getPostById(id: Int!): Post!
-  getUserPosts(skip: Float, take: Float): [Post!]!
+  getUserPosts(skip: Int, take: Int): [Post!]!
   userPostCount: Int!
   getPostComments(postId: Int!, take: Int = 12, skip: Int = 0): [CommentEntity!]!
   commentPostCount(postId: Int!): Int!

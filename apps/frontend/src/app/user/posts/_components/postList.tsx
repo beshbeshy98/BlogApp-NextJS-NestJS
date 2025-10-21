@@ -1,9 +1,10 @@
 import { Post } from "@/lib/types/modelTypes";
 import PostListItem from "./postListItem";
+import Pagination from "@/components/pagination";
 
 type Props = {
   posts: Post[];
-  curentPage: number;
+  currentPage: number;
   totalPages: number;
 };
 const PostList = ({ posts, currentPage, totalPages }: Props) => {
@@ -18,8 +19,9 @@ const PostList = ({ posts, currentPage, totalPages }: Props) => {
         <div></div>
       </div>
       {posts.map((post) => (
-        <PostListItem post={post} key={post.id}/>
+        <PostListItem post={post} key={post.id} />
       ))}
+      <Pagination {...{ currentPage, totalPages }} className="my-3" />
     </>
   );
 };

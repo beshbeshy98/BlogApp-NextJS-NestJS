@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 
 export const GET_POSTS = gql`
-  query posts($skip: Float, $take: Float) {
+  query posts($skip: Int!, $take: Int!) {
     posts(skip: $skip, take: $take) {
       id
       title
@@ -95,7 +95,7 @@ export const UNLIKE_POST_MUTATION = gql`
 `;
 
 export const GET_USER_POSTS = gql`
-  query getUserPosts($take: Int, $skip: Int) {
+  query getUserPosts($take: Int!, $skip: Int!) {
     getUserPosts(take: $take, skip: $skip) {
       id
       title

@@ -4,494 +4,572 @@
 
    ▲ Next.js 15.5.4 (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://172.22.64.1:3000
+   - Network:      http://172.20.144.1:3000
    - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 3.2s
- ○ Compiling /blog/[slug]/[id] ...
- ✓ Compiled /blog/[slug]/[id] in 6.4s
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 10530ms
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
+ ✓ Ready in 2.7s
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 8.9s
+ GET /auth/signin 200 in 10624ms
  ○ Compiling /favicon.ico ...
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 426ms
- ✓ Compiled /favicon.ico in 842ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 344ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 1379ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Unknown argument "userId" on field "Mutation.likePost".',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3423809719'
-}
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 870ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Unknown argument "userId" on field "Mutation.likePost".',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3423809719'
-}
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 687ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Unknown argument "userId" on field "Mutation.likePost".',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3423809719'
-}
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 628ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 211ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 217ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 257ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 239ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Unknown argument "userId" on field "Mutation.likePost".',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3423809719'
-}
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 823ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 228ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 213ms
- ✓ Compiled in 163ms
- ✓ Compiled /blog/[slug]/[id] in 170ms
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 648ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 205ms
- ✓ Compiled in 163ms
- ✓ Compiled /blog/[slug]/[id] in 127ms
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 574ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 367ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 237ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 260ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Unknown argument "userId" on field "Mutation.likePost".',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 988ms
-  47 |   } {
-  digest: '3423809719'
-}
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 1454ms
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 723ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 434ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 291ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Unknown argument "userId" on field "Mutation.likePost".',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3423809719'
-}
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 705ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Unknown argument "userId" on field "Mutation.likePost".',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Unknown argument "userId" on field "Mutation.likePost".
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3423809719'
-}
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 824ms
- ✓ Compiled in 139ms
- ✓ Compiled /blog/[slug]/[id] in 143ms
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 691ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 200ms
- ✓ Compiled in 153ms
- ✓ Compiled /blog/[slug]/[id] in 201ms
- ⨯ GraphQLError: Syntax Error: Expected "{", found "$".
-    at parseDocument (../src/index.ts:96:25)
-    at Module.gql (../src/index.ts:134:10)
-    at __TURBOPACK__module__evaluation__ (src\lib\gqlQueries.ts:85:38)
-    at __TURBOPACK__module__evaluation__ (src\lib\actions\postActions.ts:4:1)
-    at __TURBOPACK__module__evaluation__ (.next-internal\server\app\blog\[slug]\[id]\page\actions.js (server actions loader):1:1)
-    at __TURBOPACK__module__evaluation__ (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\[root-of-the-server]__35f77af6._.js:430:744)
-    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\blog\[slug]\[id]\page.js:16:3)
-  83 |   }
-  84 | `;
-> 85 | export const LIKE_POST_MUTATION = gql`
-     |                                      ^
-  86 |   mutation likePost $postId: Int!) {
-  87 |     likePost(userId: $userId, postId: $postId)
-  88 |   } {
-  path: undefined,
-  locations: [Array],
-  extensions: [Object: null prototype] {},
-  page: '/blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1'
-}
- ⨯ Failed to generate static paths for /blog/[slug]/[id]:
-Error: Syntax Error: Expected "{", found "$".
-    at parseDocument (../src/index.ts:96:25) {
-  type: 'GraphQLError',
-  locations: [Array],
-  extensions: {}
-}
- ⨯ Failed to generate static paths for /blog/[slug]/[id]:
-Error: Syntax Error: Expected "{", found "$".
-    at parseDocument (../src/index.ts:96:25) {
-  type: 'GraphQLError',
-  locations: [Array],
-  extensions: {}
-}
- ⨯ GraphQLError: Syntax Error: Expected "{", found "$".
-    at parseDocument (../src/index.ts:96:25)
-    at Module.gql (../src/index.ts:134:10)
-    at __TURBOPACK__module__evaluation__ (src\lib\gqlQueries.ts:85:38)
-    at __TURBOPACK__module__evaluation__ (src\lib\actions\postActions.ts:4:1)
-    at __TURBOPACK__module__evaluation__ (.next-internal\server\app\blog\[slug]\[id]\page\actions.js (server actions loader):1:1)
-    at __TURBOPACK__module__evaluation__ (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\[root-of-the-server]__35f77af6._.js:430:744)
-    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\blog\[slug]\[id]\page.js:16:3)
-  83 |   }
-  84 | `;
-> 85 | export const LIKE_POST_MUTATION = gql`
-     |                                      ^
-  86 |   mutation likePost $postId: Int!) {
-  87 |     likePost(userId: $userId, postId: $postId)
-  88 |   } {
-  path: undefined,
-  locations: [Array],
-  extensions: [Object: null prototype] {},
-  page: '/blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1'
-}
- ○ Compiling /_error ...
- ✓ Compiled /_error in 2.2s
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 3139ms
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 500 in 3238ms
- ✓ Compiled in 152ms
- GET /favicon.ico 200 in 393ms
- ✓ Compiled in 143ms
- ✓ Compiled in 136ms
- ✓ Compiled in 118ms
- ✓ Compiled in 118ms
- ✓ Compiled in 111ms
- ✓ Compiled in 104ms
- ✓ Compiled /blog/[slug]/[id] in 166ms
- GET /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 2365ms
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 392ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 220ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 224ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 200ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 202ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 191ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 172ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 180ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 240ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 163ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 180ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 192ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 177ms
- ✓ Compiled in 112ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 592ms
- ✓ Compiled in 115ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 513ms
- ✓ Compiled in 163ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 593ms
- ✓ Compiled in 114ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 498ms
- ✓ Compiled in 155ms
- ○ Compiling /_not-found/page ...
- ✓ Compiled /_not-found/page in 1311ms
- POST /blog/[slug]/[id] 200 in 417ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 404 in 1879ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 415ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 267ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 202ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 232ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 177ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 165ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 205ms
- POST /blog/umerus-unus-quaerat-doloremque-sopor-explicabo-tamen/1 200 in 216ms
+ ✓ Compiled /favicon.ico in 688ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1226ms
  ○ Compiling / ...
- ✓ Compiled / in 655ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 1842ms
- GET /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 240ms
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 211ms
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 229ms
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 188ms
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 178ms
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=445993182986932 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6787413028101501 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5569827333288387 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=8317590227263573 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=2823107555581133 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5066937205380515 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=7350092394797008 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6104557280408858 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=1465837672786922 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6525517303257616 500
- GET /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 262ms
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 223ms
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 257ms
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 198ms
- POST /blog/vacuus-talus-pecus-corporis-maiores-calamitas-alveus-vulariter-animi-amissio/2 200 in 205ms
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=166147294542543 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=3834161173114593 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5569827333288387 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=445993182986932 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=8317590227263573 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6787413028101501 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=5066937205380515 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=2823107555581133 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=7350092394797008 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6104557280408858 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=1465837672786922 500
- ⨯ upstream image response failed for https://loremflickr.com/640/480/nature?lock=6525517303257616 500
- GET /user/create-post 404 in 224ms
- GET /user/create-post 404 in 318ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 734ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 1098ms
- ✓ Compiled in 174ms
- ✓ Compiled / in 146ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 853ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 475ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 407ms
- ✓ Compiled in 254ms
- ✓ Compiled / in 231ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 950ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 516ms
-{
-  session: {
-    user: {
-      id: '14',
-      name: 'Mohamed Abd Elbadea',
-      avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjU-F4yfYKvn-qmFrX8Oq-RXLOXxURFpavyI5N3RvArtXVAuTuD1ZfkEZruHPL1wCwJIRy8PQq77zVQQYm-vTOG1-fpjB9eZNY1S6FxbmahqhLOaayUoShTjeQ8PhEyz6iZpXWvky_SLwj8axb_Vbfjhx5pOyIPSG1-90Pf0sa0oldc6GiiZaUfoCacAvvuKz-bnM4PVljaLLq9mTCBiFl2cgqmDYxuPsh4dx8jf075hUjoxZX_duNOLHGqWOkhud9RJocsemdRwpjdswLUqbtskwlq7O_fwUaEh2jJPivS5uVgaUkL5DmZpxnjT2WjNTURcME5ijCHrfNitlBuM12qPFK2hgmjLeVdmHAa-i4tprIzIm4v-QptARTbc0iuGKn0QrmahrDfWJg7G0lSGKOuRWYDrYv9sgq2_Jx1ZTQCB_szqw98Yxx4c0nn3XPvmxifSoQDIJoyae2Gr6J1IAmNF3wQ2TvzkMmXHALagfrVTDh3rbrS2wSitQu4gyWOlORhMzAsBcUOUK7nb76yhT3oK8YSgOllC50wibCc_tezCYpPjognn2g6_EfFT1JRaasxgT36TJAjXjC6S5o_73DEW_hcwQ0KHm6QKLZ9mGbXBEgapKCF6PHjZ9c3UVoyLLVVhvqpmfdStZmjGip1uE6nQ1wE12iM7-Qz0K5-ZFW5F4Q9vmkqUBBfN3f8OHUGPe9p9Hfy_66tuXL33q1901Y-skVEq8EL1p7WSOs5FRx3M5vtMA6rWTpW1ufxvw5aSbT6NFnQYmeME0kY1VFsRVoEsqbcSYwWI_qpf6J8PuvGu9g6rm-YRpAYwL_g6fI39kKLk_uMmMUJ29FV6Z5BOaAd0FV4ufs-y0JKmgUgPG5HtWATH23-rMYz3VTeN3ZKSxVMouplt96QQJ_oX4jumgT6zXc2x9udDPiAApGBteiV30uydxq8gqsXHPxQrFbOX6z1O_PLOOrYKzClCewPJ3reOhFNXSNZN2L8s8OP3ePou9OwM-g=s96-c'
-    },
-    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0LCJpYXQiOjE3NjA4MTEyMjYsImV4cCI6MTc2MDg5NzYyNn0.K_Of0WpIHJFLeXrIk1dLUaoO0YSEix-A5kWyuGk9Gyw',
-    iat: 1760811226,
-    exp: 1761416026
-  }
-}
- GET / 200 in 500ms
+ ✓ Compiled / in 799ms
+ GET / 200 in 1232ms
+ POST /auth/signin 303 in 1656ms
  ○ Compiling /user/posts ...
- ✓ Compiled /user/posts in 1633ms
- GET /user/posts 200 in 1923ms
- ✓ Compiled in 765ms
- ✓ Compiled /user/posts in 197ms
- ⨯ [Error: The default export is not a React Component in "/user/posts/layout"]
- ⨯ [Error: The default export is not a React Component in "/user/posts/layout"] {
-  page: '/user/posts'
-}
- GET /user/posts 500 in 1348ms
- ⨯ [Error: The default export is not a React Component in "/user/posts/layout"]
- ⨯ [Error: The default export is not a React Component in "/user/posts/layout"] {
-  page: '/user/posts'
-}
- GET /user/posts 500 in 948ms
- GET /favicon.ico 200 in 441ms
- ✓ Compiled in 156ms
+ ✓ Compiled /user/posts in 545ms
+ GET /user/posts 200 in 752ms
+ ✓ Compiled in 224ms
+ ✓ Compiled /user/posts in 112ms
+ GET /user/posts 200 in 362ms
+ ✓ Compiled in 193ms
+ ✓ Compiled /user/posts in 111ms
+ GET /user/posts 200 in 357ms
+ ✓ Compiled in 189ms
+ ✓ Compiled /user/posts in 143ms
+ GET /user/posts 200 in 678ms
+ ✓ Compiled in 239ms
+ ✓ Compiled /user/posts in 101ms
+ GET /user/posts 200 in 312ms
+ ✓ Compiled in 148ms
+ ✓ Compiled /user/posts in 114ms
+ GET /user/posts 200 in 349ms
+ ✓ Compiled in 122ms
+ ✓ Compiled /user/posts in 113ms
+ GET /user/posts 200 in 310ms
+ ✓ Compiled in 185ms
  ✓ Compiled /user/posts in 130ms
- ⨯ [Error: The default export is not a React Component in "/user/posts/layout"]
- ⨯ [Error: The default export is not a React Component in "/user/posts/layout"] {
-  page: '/user/posts'
+ GET /user/posts 200 in 501ms
+ ✓ Compiled in 167ms
+ ✓ Compiled /user/posts in 259ms
+ GET /user/posts 200 in 532ms
+ ✓ Compiled in 112ms
+ ✓ Compiled /user/posts in 124ms
+ GET /user/posts 200 in 346ms
+ ✓ Compiled in 109ms
+ ✓ Compiled /user/posts in 97ms
+ GET /user/posts 200 in 544ms
+ ✓ Compiled in 142ms
+ ✓ Compiled /user/posts in 144ms
+ ⨯ ReferenceError: total is not defined
+    at UserPostPage (src\app\user\posts\page.tsx:17:31)
+  15 |       <div>
+  16 |         {!posts || !posts.length ? <NoPost /> : <PostList posts={posts} currentPage={page} 
+> 17 |         totalPages={Math.ceil(total)}/>}
+     |                               ^
+  18 |       </div>
+  19 |     </>
+  20 |   ); {
+  digest: '215830334'
 }
- GET /user/posts 500 in 1428ms
- GET /favicon.ico 200 in 442ms
+ GET /user/posts 200 in 538ms
+ ✓ Compiled in 126ms
+ ✓ Compiled /user/posts in 100ms
+ GET /user/posts 200 in 900ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 374ms
+ ✓ Compiled in 155ms
+ ✓ Compiled /user/posts in 152ms
+ GET /user/posts 200 in 683ms
+ ✓ Compiled in 176ms
+ ✓ Compiled /user/posts in 140ms
+ GET /user/posts 200 in 451ms
+ ✓ Compiled in 132ms
+ ✓ Compiled /user/posts in 106ms
+ GET /user/posts 200 in 317ms
+ ✓ Compiled in 169ms
+ ✓ Compiled /user/posts in 109ms
+ ⨯ ReferenceError: Posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:16:10)
+  14 |         <div>Comments</div>
+  15 |         <div></div>
+> 16 |         {Posts.map}
+     |          ^
+  17 |     </div>
+  18 | }
+  19 | export default PostList; {
+  digest: '318981050'
+}
+ GET /user/posts 200 in 458ms
+ ✓ Compiled in 226ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 187ms
+ ✓ Compiled /user/posts in 267ms
+ ⨯ ReferenceError: Posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:16:10)
+  14 |         <div>Comments</div>
+  15 |         <div></div>
+> 16 |         {Posts.map((post) => (<div>{post.title}</div>))}
+     |          ^
+  17 |             
+  18 |     </div>
+  19 | } {
+  digest: '318981050'
+}
+ GET /user/posts 500 in 1229ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 475ms
+ GET /favicon.ico 200 in 456ms
+ ✓ Compiled in 119ms
+ ✓ Compiled /user/posts in 131ms
+ ⨯ ReferenceError: Posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:16:10)
+  14 |         <div>Comments</div>
+  15 |         <div></div>
+> 16 |         {Posts.map((post) => (<div>{post.id}</div>))}
+     |          ^
+  17 |             
+  18 |     </div>
+  19 | } {
+  digest: '318981050'
+}
+ GET /user/posts 500 in 844ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 426ms
+ GET /favicon.ico 200 in 410ms
+ ✓ Compiled in 172ms
+ ✓ Compiled /user/posts in 102ms
+ ⨯ ReferenceError: Posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
+  15 |       <div>Comments</div>
+  16 |       <div></div>
+> 17 |       {Posts.map((post) => (
+     |        ^
+  18 |         <div>{post.id}</div>
+  19 |       ))}
+  20 |     </div> {
+  digest: '318981050'
+}
+ GET /user/posts 500 in 873ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 387ms
+ GET /favicon.ico 200 in 370ms
+ ✓ Compiled in 213ms
+ ✓ Compiled /user/posts in 243ms
+ ⨯ ReferenceError: Posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
+  15 |       <div>Comments</div>
+  16 |       <div></div>
+> 17 |       {Posts.map((post) => (
+     |        ^
+  18 |         <div key={post.id}>{post.id}</div>
+  19 |       ))}
+  20 |     </div> {
+  digest: '318981050'
+}
+ GET /user/posts 500 in 1579ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 392ms
+ GET /favicon.ico 200 in 397ms
+ ✓ Compiled in 167ms
+ ✓ Compiled /user/posts in 178ms
+ ⨯ ReferenceError: posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
+  15 |       <div>Comments</div>
+  16 |       <div></div>
+> 17 |       {posts.map((post) => (
+     |        ^
+  18 |         <div key={post.id}>{post.id}</div>
+  19 |       ))}
+  20 |     </div> {
+  digest: '2850593530'
+}
+ GET /user/posts 500 in 1519ms
+ GET /favicon.ico 200 in 1065ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1112ms
+ ⨯ ReferenceError: posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
+  15 |       <div>Comments</div>
+  16 |       <div></div>
+> 17 |       {posts.map((post) => (
+     |        ^
+  18 |         <div key={post.id}>{post.id}</div>
+  19 |       ))}
+  20 |     </div> {
+  digest: '2850593530'
+}
+ GET /user/posts 500 in 694ms
+ ✓ Compiled in 226ms
+ ✓ Compiled /user/posts in 186ms
+ ⨯ ReferenceError: posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
+  15 |       <div>Comments</div>
+  16 |       <div></div>
+> 17 |       {posts.map((post) => (
+     |        ^
+  18 |         <div key={post.id}>{post.id}</div>
+  19 |       ))}
+  20 |     </div> {
+  digest: '2850593530'
+}
+ GET /user/posts 500 in 1425ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 526ms
+ GET /favicon.ico 200 in 395ms
+ ✓ Compiled in 209ms
+ ✓ Compiled /user/posts in 148ms
+ ⨯ ReferenceError: posts is not defined
+    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
+  15 |       <div>Comments</div>
+  16 |       <div></div>
+> 17 |       {posts.map((post) => (
+     |        ^
+  18 |         <div key={post.id}>{post.id}</div>
+  19 |       ))}
+  20 |     </div> {
+  digest: '2850593530'
+}
+ GET /user/posts 500 in 1395ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 494ms
+ GET /favicon.ico 200 in 415ms
+ ✓ Compiled in 146ms
+ ✓ Compiled /user/posts in 121ms
+ GET /user/posts 200 in 837ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 406ms
+ ✓ Compiled in 230ms
+ ✓ Compiled /user/posts in 326ms
+ GET /user/posts 200 in 1010ms
+ ✓ Compiled in 230ms
+ ✓ Compiled /user/posts in 253ms
+ GET /user/posts 200 in 1147ms
+ ✓ Compiled in 173ms
+ ✓ Compiled /user/posts in 118ms
+ GET /user/posts 200 in 432ms
+ ✓ Compiled in 135ms
+ ✓ Compiled /user/posts in 122ms
+ GET /user/posts 200 in 439ms
+ ✓ Compiled in 152ms
+ ✓ Compiled /user/posts in 100ms
+ GET /user/posts 200 in 365ms
+ ✓ Compiled in 192ms
+ ✓ Compiled in 164ms
+ ✓ Compiled in 317ms
  ✓ Compiled in 178ms
- ✓ Compiled in 140ms
- ✓ Compiled /user/posts in 129ms
- ⨯ Error: Failed to load chunk server/chunks/ssr/apps_frontend_src_app_user_posts_layout_tsx_b143893b._.js from runtime for chunk server/app/user/posts/page.js
-    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\user\posts\page.js:11:3) {
-  page: '/user/posts',
-  [cause]: SyntaxError: Missing initializer in const declaration
-      at <unknown> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\apps_frontend_src_app_user_posts_layout_tsx_b143893b._.js:21)
+ ✓ Compiled /user/posts in 116ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+ GET /user/posts 200 in 566ms
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
+    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
+  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
+  11 |       <div className="relative w-48 h-32">
+> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
+     |                          ^
+  13 |       </div>
+  14 |     </div>
+  15 |   ); {
+  digest: '1514970119'
+}
+ ✓ Compiled in 179ms
+ ✓ Compiled /user/posts in 224ms
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ GET /user/posts 200 in 1356ms
+ ✓ Compiled in 173ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 411ms
+ ✓ Compiled in 183ms
+ ✓ Compiled /user/posts in 106ms
+ GET /user/posts 200 in 352ms
+ ✓ Compiled in 219ms
+ ✓ Compiled /user/posts in 146ms
+ GET /user/posts 200 in 492ms
+ ✓ Compiled in 217ms
+ ✓ Compiled /user/posts in 123ms
+ GET /user/posts 200 in 449ms
+ ✓ Compiled in 158ms
+ ✓ Compiled /user/posts in 104ms
+ GET /user/posts 200 in 382ms
+ ✓ Compiled in 166ms
+ ✓ Compiled /user/posts in 103ms
+ GET /user/posts 200 in 475ms
+ ✓ Compiled in 177ms
+ ✓ Compiled /user/posts in 116ms
+ GET /user/posts 200 in 463ms
+ ✓ Compiled in 155ms
+ ✓ Compiled /user/posts in 121ms
+ GET /user/posts 200 in 376ms
+ ✓ Compiled in 150ms
+ ✓ Compiled /user/posts in 97ms
+ GET /user/posts 200 in 315ms
+ ✓ Compiled in 170ms
+ ✓ Compiled /user/posts in 103ms
+ GET /user/posts 200 in 388ms
+ ✓ Compiled in 190ms
+ ✓ Compiled /user/posts in 114ms
+ GET /user/posts 200 in 372ms
+ ✓ Compiled in 213ms
+ ✓ Compiled /user/posts in 105ms
+ GET /user/posts 200 in 387ms
+ ✓ Compiled in 165ms
+ ✓ Compiled /user/posts in 141ms
+ GET /user/posts 200 in 465ms
+ ✓ Compiled in 158ms
+ ✓ Compiled /user/posts in 151ms
+ GET /user/posts 200 in 434ms
+ ✓ Compiled in 191ms
+ ✓ Compiled /user/posts in 149ms
+ GET /user/posts 200 in 421ms
+ ✓ Compiled in 155ms
+ ✓ Compiled /user/posts in 131ms
+ GET /user/posts 200 in 483ms
+ ✓ Compiled in 167ms
+ ✓ Compiled /user/posts in 155ms
+ GET /user/posts 200 in 535ms
+ ✓ Compiled in 171ms
+ ✓ Compiled /user/posts in 113ms
+ GET /user/posts 200 in 491ms
+ ✓ Compiled in 181ms
+ ✓ Compiled /user/posts in 141ms
+ GET /user/posts 200 in 376ms
+ ✓ Compiled in 196ms
+ ✓ Compiled /user/posts in 94ms
+ GET /user/posts 200 in 346ms
+ ✓ Compiled in 246ms
+ ✓ Compiled /user/posts in 231ms
+ GET /user/posts 200 in 757ms
+ ✓ Compiled in 180ms
+ ✓ Compiled /user/posts in 147ms
+ GET /user/posts 200 in 447ms
+ ✓ Compiled in 194ms
+ ✓ Compiled /user/posts in 108ms
+ GET /user/posts 200 in 378ms
+ ✓ Compiled in 177ms
+ ✓ Compiled /user/posts in 97ms
+ GET /user/posts 200 in 391ms
+ ✓ Compiled in 149ms
+ ✓ Compiled /user/posts in 99ms
+ GET /user/posts 200 in 365ms
+ ✓ Compiled in 191ms
+ ✓ Compiled /user/posts in 175ms
+ GET /user/posts 200 in 534ms
+ ✓ Compiled in 151ms
+ ✓ Compiled /user/posts in 90ms
+ GET /user/posts 200 in 409ms
+ ✓ Compiled in 167ms
+ ✓ Compiled /user/posts in 139ms
+ GET /user/posts 200 in 537ms
+ ✓ Compiled in 162ms
+ ✓ Compiled /user/posts in 124ms
+ GET /user/posts 200 in 1358ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 396ms
+ ✓ Compiled in 131ms
+ ✓ Compiled /user/posts in 107ms
+ GET /user/posts 200 in 373ms
+ ✓ Compiled in 179ms
+ ✓ Compiled /user/posts in 138ms
+ GET /user/posts 200 in 966ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 485ms
+ ✓ Compiled in 141ms
+ ✓ Compiled /user/posts in 137ms
+ GET /user/posts 200 in 545ms
+ ✓ Compiled in 245ms
+ ✓ Compiled /user/posts in 187ms
+ GET /user/posts 200 in 610ms
+ ✓ Compiled in 160ms
+ ✓ Compiled /user/posts in 109ms
+ GET /user/posts 200 in 496ms
+ ✓ Compiled in 186ms
+ ✓ Compiled /user/posts in 115ms
+ GET /user/posts 200 in 470ms
+ ✓ Compiled in 161ms
+ ✓ Compiled /user/posts in 110ms
+ GET /user/posts 200 in 460ms
+ ✓ Compiled in 135ms
+ ✓ Compiled /user/posts in 91ms
+ GET /user/posts 200 in 458ms
+ ✓ Compiled in 152ms
+ ✓ Compiled /user/posts in 109ms
+ GET /user/posts 200 in 534ms
+ ✓ Compiled in 183ms
+ ✓ Compiled /user/posts in 100ms
+ GET /user/posts 200 in 461ms
+ ✓ Compiled in 190ms
+ ✓ Compiled /user/posts in 130ms
+ GET /user/posts 200 in 507ms
+ ✓ Compiled in 172ms
+ ✓ Compiled /user/posts in 102ms
+ GET /user/posts 200 in 395ms
+ ✓ Compiled in 145ms
+ ✓ Compiled /user/posts in 102ms
+ GET /user/posts 200 in 350ms
+ ✓ Compiled in 205ms
+ ✓ Compiled /user/posts in 136ms
+ GET /user/posts 200 in 485ms
+ ✓ Compiled in 196ms
+ ✓ Compiled /user/posts in 98ms
+ GET /user/posts 200 in 390ms
+ ✓ Compiled in 163ms
+ ✓ Compiled /user/posts in 124ms
+ GET /user/posts 200 in 412ms
+ ✓ Compiled in 176ms
+ ✓ Compiled /user/posts in 102ms
+ GET /user/posts 200 in 401ms
+ ✓ Compiled in 228ms
+ ✓ Compiled /user/posts in 200ms
+ GET /user/posts 200 in 607ms
+ ✓ Compiled in 189ms
+ ✓ Compiled /user/posts in 110ms
+ GET /user/posts 200 in 454ms
+ ✓ Compiled in 153ms
+ ✓ Compiled /user/posts in 141ms
+ GET /user/posts 200 in 488ms
+ ✓ Compiled in 176ms
+ ✓ Compiled /user/posts in 100ms
+ GET /user/posts 200 in 501ms
+ ✓ Compiled in 209ms
+ ✓ Compiled /user/posts in 106ms
+ GET /user/posts 200 in 384ms
+ ✓ Compiled in 187ms
+ ✓ Compiled /user/posts in 137ms
+ GET /user/posts 200 in 468ms
+ ✓ Compiled in 162ms
+ ✓ Compiled /user/posts in 386ms
+ GET /user/posts 200 in 881ms
+ ✓ Compiled in 145ms
+ ✓ Compiled /user/posts in 185ms
+ GET /user/posts 200 in 688ms
+ ✓ Compiled in 178ms
+ ✓ Compiled /user/posts in 109ms
+ GET /user/posts 200 in 487ms
+ ✓ Compiled in 177ms
+ ✓ Compiled /user/posts in 123ms
+ GET /user/posts 200 in 446ms
+ ✓ Compiled in 175ms
+ ✓ Compiled /user/posts in 117ms
+ GET /user/posts 200 in 519ms
+ ✓ Compiled in 198ms
+ ✓ Compiled /user/posts in 185ms
+ GET /user/posts 200 in 469ms
+ ✓ Compiled in 135ms
+ ✓ Compiled /user/posts in 106ms
+ GET /user/posts 200 in 459ms
+ ✓ Compiled in 134ms
+ ✓ Compiled /user/posts in 94ms
+ GET /user/posts 200 in 416ms
+ ✓ Compiled in 167ms
+ ✓ Compiled /user/posts in 96ms
+ GET /user/posts 200 in 406ms
+ ✓ Compiled in 138ms
+ ✓ Compiled /user/posts in 112ms
+ GET /user/posts 200 in 485ms
+ ✓ Compiled in 246ms
+ ✓ Compiled /user/posts in 124ms
+ GET /user/posts 200 in 519ms
+ ✓ Compiled in 146ms
+ ✓ Compiled /user/posts in 113ms

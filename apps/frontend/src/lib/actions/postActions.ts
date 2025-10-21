@@ -28,7 +28,6 @@ export async function fetchUserPosts({
   page,
   pageSize,
 }: {
-  userId: number;
   page?: number;
   pageSize?: number;
 }) {

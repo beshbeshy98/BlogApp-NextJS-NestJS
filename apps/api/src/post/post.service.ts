@@ -1,7 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { DEFAULT_PAGE_SIZE } from 'src/constants';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { CreatePostInput } from './dto/create-post.input';
+import { UpdatePostInput } from './dto/update-post.input';
 
 @Injectable()
 export class PostService {
@@ -95,9 +96,38 @@ export class PostService {
           })),
         },
       },
-      include:{
-        tags:true,
-      }
+      include: {
+        tags: true,
+      },
+    });
+  }
+
+  async updatePost(userId: number, updatePostInput: UpdatePostInput) {
+    const authorIdMatched = await this.prisma.post.findUnique({
+      where: {
+        id: updatePostInput.postId,
+        authorId: userId,
+      },
+    });
+
+    if (!authorIdMatched) throw new UnauthorizedException();
+
+    return this.prisma.post.update({
+      where: {
+        id: updatePostInput.postId,
+      },
+      data: {
+        ...updatePostInput,
+        tags: {
+          connectOrCreate: updatePostInput.tags?.map((tag) => ({
+            where: { name: tag },
+            create: { name: tag },
+          })),
+        },
+      },
+      include: {
+        tags: true,
+      },
     });
   }
 }

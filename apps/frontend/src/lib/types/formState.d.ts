@@ -30,20 +30,23 @@ export type CreateCommentFormState =
     }
   | undefined;
 
-export type PostFormState = {
-  data?: {
-    title?: string;
-    content?: string;
-    thumbnail?: string;
-    tags?: string;
-    published?: string;
-  };
-  errors?: {
-    title?: string[];
-    content?: string[];
-    thumbnail?: string[];
-    tags?: string[];
-  };
-  message?: string;
-  ok?: boolean;
-};
+export type PostFormState =
+  | {
+      data?: {
+        title?: string;
+        content?: string;
+        thumbnail?: string;
+        tags?: string;
+        published?: string;
+      };
+      errors?: {
+        title?: string[];
+        content?: string[];
+        thumbnail?: string[];
+        tags?: string[];
+        published?: string[];
+      };
+      message?: string;
+      ok?: boolean;
+    }
+  | undefined;

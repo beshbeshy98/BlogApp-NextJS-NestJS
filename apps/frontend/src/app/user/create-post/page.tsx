@@ -1,3 +1,4 @@
+import CreatePostContainer from "./_component/createPostContainer";
 import UpsertPostForm from "./_component/upsertPostForm";
 
 const CreatePostPage = () => {
@@ -6,7 +7,7 @@ const CreatePostPage = () => {
       <p className="text-xl text-center font-bold text-slate-700">
         Create a New Post
       </p>
-      <UpsertPostForm />
+      <CreatePostContainer />
     </div>
   );
 };

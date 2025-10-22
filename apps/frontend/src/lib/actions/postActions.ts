@@ -1,10 +1,12 @@
 "use server";
 
+import { print } from "graphql";
 import { authFetchGraphQL, fetchGraphQL } from "../fetchGraphQL";
 import { GET_POST_BY_ID, GET_POSTS, GET_USER_POSTS } from "../gqlQueries";
-import { print } from "graphql";
-import { Post } from "../types/modelTypes";
 import { transformTakeSkip } from "../helpers";
+import { PostFormState } from "../types/formState";
+import { Post } from "../types/modelTypes";
+import { postFormSchema } from "../zodSchemas/postFormSchema";
 
 export const fetchPosts = async ({
   page,
@@ -40,4 +42,19 @@ export async function fetchUserPosts({
     posts: data.getUserPosts as Post[],
     totalPosts: data.userPostCount as number,
   };
+}
+
+export async function savePost(
+  state: PostFormState,
+  formData: FormData
+): Promise<PostFormState> {
+  const validatedFields = postFormSchema.safeParse(
+    Object.fromEntries(formData.entries())
+  );
+
+  if (!validatedFields.success)
+    return {
+      data: Object.fromEntries(formData.entries()),
+      errors: validatedFields.error.flatten().fieldErrors,
+    };
 }

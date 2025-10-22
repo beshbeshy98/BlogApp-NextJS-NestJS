@@ -8,1072 +8,195 @@
    - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 2.7s
- ○ Compiling /auth/signin ...
- ✓ Compiled /auth/signin in 8.9s
- GET /auth/signin 200 in 10624ms
- ○ Compiling /favicon.ico ...
- ✓ Compiled /favicon.ico in 688ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 1226ms
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 908ms
+ ✓ Ready in 4.4s
  ○ Compiling / ...
- ✓ Compiled / in 799ms
- GET / 200 in 1232ms
- POST /auth/signin 303 in 1656ms
- ○ Compiling /user/posts ...
- ✓ Compiled /user/posts in 545ms
- GET /user/posts 200 in 752ms
- ✓ Compiled in 224ms
- ✓ Compiled /user/posts in 112ms
- GET /user/posts 200 in 362ms
- ✓ Compiled in 193ms
- ✓ Compiled /user/posts in 111ms
- GET /user/posts 200 in 357ms
- ✓ Compiled in 189ms
- ✓ Compiled /user/posts in 143ms
- GET /user/posts 200 in 678ms
- ✓ Compiled in 239ms
- ✓ Compiled /user/posts in 101ms
- GET /user/posts 200 in 312ms
- ✓ Compiled in 148ms
- ✓ Compiled /user/posts in 114ms
- GET /user/posts 200 in 349ms
- ✓ Compiled in 122ms
- ✓ Compiled /user/posts in 113ms
- GET /user/posts 200 in 310ms
- ✓ Compiled in 185ms
- ✓ Compiled /user/posts in 130ms
- GET /user/posts 200 in 501ms
- ✓ Compiled in 167ms
- ✓ Compiled /user/posts in 259ms
- GET /user/posts 200 in 532ms
- ✓ Compiled in 112ms
- ✓ Compiled /user/posts in 124ms
- GET /user/posts 200 in 346ms
- ✓ Compiled in 109ms
- ✓ Compiled /user/posts in 97ms
- GET /user/posts 200 in 544ms
- ✓ Compiled in 142ms
- ✓ Compiled /user/posts in 144ms
- ⨯ ReferenceError: total is not defined
-    at UserPostPage (src\app\user\posts\page.tsx:17:31)
-  15 |       <div>
-  16 |         {!posts || !posts.length ? <NoPost /> : <PostList posts={posts} currentPage={page} 
-> 17 |         totalPages={Math.ceil(total)}/>}
-     |                               ^
-  18 |       </div>
-  19 |     </>
-  20 |   ); {
-  digest: '215830334'
-}
- GET /user/posts 200 in 538ms
- ✓ Compiled in 126ms
- ✓ Compiled /user/posts in 100ms
- GET /user/posts 200 in 900ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 374ms
- ✓ Compiled in 155ms
- ✓ Compiled /user/posts in 152ms
- GET /user/posts 200 in 683ms
- ✓ Compiled in 176ms
- ✓ Compiled /user/posts in 140ms
- GET /user/posts 200 in 451ms
- ✓ Compiled in 132ms
- ✓ Compiled /user/posts in 106ms
- GET /user/posts 200 in 317ms
- ✓ Compiled in 169ms
- ✓ Compiled /user/posts in 109ms
- ⨯ ReferenceError: Posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:16:10)
-  14 |         <div>Comments</div>
-  15 |         <div></div>
-> 16 |         {Posts.map}
-     |          ^
-  17 |     </div>
-  18 | }
-  19 | export default PostList; {
-  digest: '318981050'
-}
- GET /user/posts 200 in 458ms
- ✓ Compiled in 226ms
- ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- ✓ Compiled in 187ms
- ✓ Compiled /user/posts in 267ms
- ⨯ ReferenceError: Posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:16:10)
-  14 |         <div>Comments</div>
-  15 |         <div></div>
-> 16 |         {Posts.map((post) => (<div>{post.title}</div>))}
-     |          ^
-  17 |             
-  18 |     </div>
-  19 | } {
-  digest: '318981050'
-}
- GET /user/posts 500 in 1229ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 475ms
- GET /favicon.ico 200 in 456ms
- ✓ Compiled in 119ms
- ✓ Compiled /user/posts in 131ms
- ⨯ ReferenceError: Posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:16:10)
-  14 |         <div>Comments</div>
-  15 |         <div></div>
-> 16 |         {Posts.map((post) => (<div>{post.id}</div>))}
-     |          ^
-  17 |             
-  18 |     </div>
-  19 | } {
-  digest: '318981050'
-}
- GET /user/posts 500 in 844ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 426ms
- GET /favicon.ico 200 in 410ms
- ✓ Compiled in 172ms
- ✓ Compiled /user/posts in 102ms
- ⨯ ReferenceError: Posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
-  15 |       <div>Comments</div>
-  16 |       <div></div>
-> 17 |       {Posts.map((post) => (
-     |        ^
-  18 |         <div>{post.id}</div>
-  19 |       ))}
-  20 |     </div> {
-  digest: '318981050'
-}
- GET /user/posts 500 in 873ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 387ms
- GET /favicon.ico 200 in 370ms
- ✓ Compiled in 213ms
- ✓ Compiled /user/posts in 243ms
- ⨯ ReferenceError: Posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
-  15 |       <div>Comments</div>
-  16 |       <div></div>
-> 17 |       {Posts.map((post) => (
-     |        ^
-  18 |         <div key={post.id}>{post.id}</div>
-  19 |       ))}
-  20 |     </div> {
-  digest: '318981050'
-}
- GET /user/posts 500 in 1579ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 392ms
- GET /favicon.ico 200 in 397ms
- ✓ Compiled in 167ms
- ✓ Compiled /user/posts in 178ms
- ⨯ ReferenceError: posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
-  15 |       <div>Comments</div>
-  16 |       <div></div>
-> 17 |       {posts.map((post) => (
-     |        ^
-  18 |         <div key={post.id}>{post.id}</div>
-  19 |       ))}
-  20 |     </div> {
-  digest: '2850593530'
-}
- GET /user/posts 500 in 1519ms
- GET /favicon.ico 200 in 1065ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 1112ms
- ⨯ ReferenceError: posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
-  15 |       <div>Comments</div>
-  16 |       <div></div>
-> 17 |       {posts.map((post) => (
-     |        ^
-  18 |         <div key={post.id}>{post.id}</div>
-  19 |       ))}
-  20 |     </div> {
-  digest: '2850593530'
-}
- GET /user/posts 500 in 694ms
- ✓ Compiled in 226ms
- ✓ Compiled /user/posts in 186ms
- ⨯ ReferenceError: posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
-  15 |       <div>Comments</div>
-  16 |       <div></div>
-> 17 |       {posts.map((post) => (
-     |        ^
-  18 |         <div key={post.id}>{post.id}</div>
-  19 |       ))}
-  20 |     </div> {
-  digest: '2850593530'
-}
- GET /user/posts 500 in 1425ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 526ms
- GET /favicon.ico 200 in 395ms
- ✓ Compiled in 209ms
- ✓ Compiled /user/posts in 148ms
- ⨯ ReferenceError: posts is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:17:8)
-  15 |       <div>Comments</div>
-  16 |       <div></div>
-> 17 |       {posts.map((post) => (
-     |        ^
-  18 |         <div key={post.id}>{post.id}</div>
-  19 |       ))}
-  20 |     </div> {
-  digest: '2850593530'
-}
- GET /user/posts 500 in 1395ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 494ms
- GET /favicon.ico 200 in 415ms
- ✓ Compiled in 146ms
- ✓ Compiled /user/posts in 121ms
- GET /user/posts 200 in 837ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 406ms
- ✓ Compiled in 230ms
- ✓ Compiled /user/posts in 326ms
- GET /user/posts 200 in 1010ms
- ✓ Compiled in 230ms
- ✓ Compiled /user/posts in 253ms
- GET /user/posts 200 in 1147ms
- ✓ Compiled in 173ms
- ✓ Compiled /user/posts in 118ms
- GET /user/posts 200 in 432ms
- ✓ Compiled in 135ms
- ✓ Compiled /user/posts in 122ms
- GET /user/posts 200 in 439ms
- ✓ Compiled in 152ms
- ✓ Compiled /user/posts in 100ms
- GET /user/posts 200 in 365ms
- ✓ Compiled in 192ms
- ✓ Compiled in 164ms
- ✓ Compiled in 317ms
- ✓ Compiled in 178ms
- ✓ Compiled /user/posts in 116ms
-Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
- GET /user/posts 200 in 566ms
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ⨯ TypeError: Cannot read properties of undefined (reading 'thumbnail')
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:12:26)
-  10 |     <div className="grid grid-cols-8 m-2 rounded-md overflow-hidden border shadow hover:scale-[101%] transition text-center bg-white">
-  11 |       <div className="relative w-48 h-32">
-> 12 |         <Image src={post.thumbnail ?? "/no-image.png"} alt={post.title} fill />
-     |                          ^
-  13 |       </div>
-  14 |     </div>
-  15 |   ); {
-  digest: '1514970119'
-}
- ✓ Compiled in 179ms
- ✓ Compiled /user/posts in 224ms
-Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
- GET /user/posts 200 in 1356ms
- ✓ Compiled in 173ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 411ms
- ✓ Compiled in 183ms
- ✓ Compiled /user/posts in 106ms
- GET /user/posts 200 in 352ms
- ✓ Compiled in 219ms
- ✓ Compiled /user/posts in 146ms
- GET /user/posts 200 in 492ms
- ✓ Compiled in 217ms
- ✓ Compiled /user/posts in 123ms
- GET /user/posts 200 in 449ms
- ✓ Compiled in 158ms
- ✓ Compiled /user/posts in 104ms
- GET /user/posts 200 in 382ms
- ✓ Compiled in 166ms
- ✓ Compiled /user/posts in 103ms
- GET /user/posts 200 in 475ms
- ✓ Compiled in 177ms
- ✓ Compiled /user/posts in 116ms
- GET /user/posts 200 in 463ms
- ✓ Compiled in 155ms
- ✓ Compiled /user/posts in 121ms
- GET /user/posts 200 in 376ms
- ✓ Compiled in 150ms
- ✓ Compiled /user/posts in 97ms
- GET /user/posts 200 in 315ms
- ✓ Compiled in 170ms
- ✓ Compiled /user/posts in 103ms
- GET /user/posts 200 in 388ms
- ✓ Compiled in 190ms
- ✓ Compiled /user/posts in 114ms
- GET /user/posts 200 in 372ms
- ✓ Compiled in 213ms
- ✓ Compiled /user/posts in 105ms
- GET /user/posts 200 in 387ms
- ✓ Compiled in 165ms
- ✓ Compiled /user/posts in 141ms
- GET /user/posts 200 in 465ms
- ✓ Compiled in 158ms
- ✓ Compiled /user/posts in 151ms
- GET /user/posts 200 in 434ms
- ✓ Compiled in 191ms
- ✓ Compiled /user/posts in 149ms
- GET /user/posts 200 in 421ms
- ✓ Compiled in 155ms
- ✓ Compiled /user/posts in 131ms
- GET /user/posts 200 in 483ms
- ✓ Compiled in 167ms
- ✓ Compiled /user/posts in 155ms
- GET /user/posts 200 in 535ms
- ✓ Compiled in 171ms
- ✓ Compiled /user/posts in 113ms
- GET /user/posts 200 in 491ms
- ✓ Compiled in 181ms
- ✓ Compiled /user/posts in 141ms
- GET /user/posts 200 in 376ms
- ✓ Compiled in 196ms
- ✓ Compiled /user/posts in 94ms
- GET /user/posts 200 in 346ms
- ✓ Compiled in 246ms
- ✓ Compiled /user/posts in 231ms
- GET /user/posts 200 in 757ms
- ✓ Compiled in 180ms
- ✓ Compiled /user/posts in 147ms
- GET /user/posts 200 in 447ms
- ✓ Compiled in 194ms
- ✓ Compiled /user/posts in 108ms
- GET /user/posts 200 in 378ms
- ✓ Compiled in 177ms
- ✓ Compiled /user/posts in 97ms
- GET /user/posts 200 in 391ms
- ✓ Compiled in 149ms
- ✓ Compiled /user/posts in 99ms
- GET /user/posts 200 in 365ms
- ✓ Compiled in 191ms
- ✓ Compiled /user/posts in 175ms
- GET /user/posts 200 in 534ms
- ✓ Compiled in 151ms
- ✓ Compiled /user/posts in 90ms
- GET /user/posts 200 in 409ms
- ✓ Compiled in 167ms
- ✓ Compiled /user/posts in 139ms
- GET /user/posts 200 in 537ms
- ✓ Compiled in 162ms
- ✓ Compiled /user/posts in 124ms
- GET /user/posts 200 in 1358ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 396ms
- ✓ Compiled in 131ms
- ✓ Compiled /user/posts in 107ms
- GET /user/posts 200 in 373ms
- ✓ Compiled in 179ms
- ✓ Compiled /user/posts in 138ms
- GET /user/posts 200 in 966ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 485ms
- ✓ Compiled in 141ms
- ✓ Compiled /user/posts in 137ms
- GET /user/posts 200 in 545ms
- ✓ Compiled in 245ms
- ✓ Compiled /user/posts in 187ms
- GET /user/posts 200 in 610ms
- ✓ Compiled in 160ms
- ✓ Compiled /user/posts in 109ms
- GET /user/posts 200 in 496ms
- ✓ Compiled in 186ms
- ✓ Compiled /user/posts in 115ms
- GET /user/posts 200 in 470ms
- ✓ Compiled in 161ms
- ✓ Compiled /user/posts in 110ms
- GET /user/posts 200 in 460ms
- ✓ Compiled in 135ms
- ✓ Compiled /user/posts in 91ms
- GET /user/posts 200 in 458ms
- ✓ Compiled in 152ms
- ✓ Compiled /user/posts in 109ms
- GET /user/posts 200 in 534ms
- ✓ Compiled in 183ms
- ✓ Compiled /user/posts in 100ms
- GET /user/posts 200 in 461ms
- ✓ Compiled in 190ms
- ✓ Compiled /user/posts in 130ms
- GET /user/posts 200 in 507ms
- ✓ Compiled in 172ms
- ✓ Compiled /user/posts in 102ms
- GET /user/posts 200 in 395ms
- ✓ Compiled in 145ms
- ✓ Compiled /user/posts in 102ms
- GET /user/posts 200 in 350ms
- ✓ Compiled in 205ms
- ✓ Compiled /user/posts in 136ms
- GET /user/posts 200 in 485ms
- ✓ Compiled in 196ms
- ✓ Compiled /user/posts in 98ms
- GET /user/posts 200 in 390ms
- ✓ Compiled in 163ms
- ✓ Compiled /user/posts in 124ms
- GET /user/posts 200 in 412ms
- ✓ Compiled in 176ms
- ✓ Compiled /user/posts in 102ms
- GET /user/posts 200 in 401ms
- ✓ Compiled in 228ms
- ✓ Compiled /user/posts in 200ms
- GET /user/posts 200 in 607ms
- ✓ Compiled in 189ms
- ✓ Compiled /user/posts in 110ms
- GET /user/posts 200 in 454ms
- ✓ Compiled in 153ms
- ✓ Compiled /user/posts in 141ms
- GET /user/posts 200 in 488ms
- ✓ Compiled in 176ms
- ✓ Compiled /user/posts in 100ms
- GET /user/posts 200 in 501ms
- ✓ Compiled in 209ms
- ✓ Compiled /user/posts in 106ms
- GET /user/posts 200 in 384ms
- ✓ Compiled in 187ms
- ✓ Compiled /user/posts in 137ms
- GET /user/posts 200 in 468ms
- ✓ Compiled in 162ms
- ✓ Compiled /user/posts in 386ms
- GET /user/posts 200 in 881ms
- ✓ Compiled in 145ms
- ✓ Compiled /user/posts in 185ms
- GET /user/posts 200 in 688ms
- ✓ Compiled in 178ms
- ✓ Compiled /user/posts in 109ms
- GET /user/posts 200 in 487ms
- ✓ Compiled in 177ms
- ✓ Compiled /user/posts in 123ms
- GET /user/posts 200 in 446ms
- ✓ Compiled in 175ms
- ✓ Compiled /user/posts in 117ms
- GET /user/posts 200 in 519ms
- ✓ Compiled in 198ms
- ✓ Compiled /user/posts in 185ms
- GET /user/posts 200 in 469ms
- ✓ Compiled in 135ms
- ✓ Compiled /user/posts in 106ms
- GET /user/posts 200 in 459ms
- ✓ Compiled in 134ms
- ✓ Compiled /user/posts in 94ms
- GET /user/posts 200 in 416ms
- ✓ Compiled in 167ms
- ✓ Compiled /user/posts in 96ms
- GET /user/posts 200 in 406ms
- ✓ Compiled in 138ms
- ✓ Compiled /user/posts in 112ms
- GET /user/posts 200 in 485ms
- ✓ Compiled in 246ms
- ✓ Compiled /user/posts in 124ms
- GET /user/posts 200 in 519ms
- ✓ Compiled in 146ms
- ✓ Compiled /user/posts in 113ms
- GET /user/posts 200 in 475ms
- ✓ Compiled in 162ms
- ✓ Compiled /user/posts in 115ms
- GET /user/posts 200 in 380ms
- ✓ Compiled in 159ms
- ✓ Compiled /user/posts in 94ms
- GET /user/posts 200 in 417ms
- ✓ Compiled in 216ms
- ✓ Compiled /user/posts in 121ms
- GET /user/posts 200 in 574ms
- ✓ Compiled in 188ms
- ✓ Compiled in 193ms
- ✓ Compiled in 190ms
- ✓ Compiled /user/posts in 225ms
- GET /user/posts 200 in 827ms
- ✓ Compiled in 147ms
- ✓ Compiled /user/posts in 168ms
- GET /user/posts 200 in 1701ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 374ms
- ✓ Compiled in 206ms
- ✓ Compiled /user/posts in 139ms
- GET /user/posts 200 in 535ms
- ✓ Compiled in 173ms
- ✓ Compiled /user/posts in 105ms
- GET /user/posts 200 in 599ms
- ✓ Compiled in 218ms
- ✓ Compiled /user/posts in 202ms
- GET /user/posts 200 in 677ms
+ ✓ Compiled / in 6.4s
+ GET / 200 in 8169ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 769ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1266ms
+ ✓ Compiled /api/auth/signout in 267ms
+ GET /api/auth/signout 307 in 619ms
+ GET / 200 in 631ms
  ○ Compiling /_not-found/page ...
- ✓ Compiled /_not-found/page in 1710ms
- GET /user/user/posts/1/edit 404 in 2031ms
- GET /user/user/posts/1/edit 404 in 1308ms
- GET /user/posts 200 in 1637ms
- GET /user/user/posts/1/delete 404 in 480ms
- GET /user/user/posts/1/delete 404 in 813ms
- GET /user/posts 200 in 2087ms
- GET / 200 in 703ms
- GET /?page=2 200 in 283ms
- GET /?page=3 200 in 229ms
- ○ Compiling /blog/[slug]/[id] ...
- ✓ Compiled /blog/[slug]/[id] in 942ms
- GET /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 200 in 2757ms
- ⨯ TypeError: fetch failed
-    at async authFetchGraphQL (src\lib\fetchGraphQL.ts:29:20)
- POST /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 1735ms
-    at async getPostLikeData (src\lib\actions\likeActions.ts:11:16)
-  27 | export const authFetchGraphQL = async (query: string, variables = {}) => {
-  28 |   const session = await getSession();
-> 29 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-     |                    ^
-  30 |     method: "POST",
-  31 |     headers: {
-  32 |       "Content-Type": "application/json", {
-  digest: '3503161902',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async getPostComments (src\lib\actions\commentActions.ts:19:16)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '1044731829',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- POST /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 1460ms
- ⨯ TypeError: fetch failed
-    at async authFetchGraphQL (src\lib\fetchGraphQL.ts:29:20)
-    at async likePost (src\lib\actions\likeActions.ts:21:16)
-  27 | export const authFetchGraphQL = async (query: string, variables = {}) => {
-  28 |   const session = await getSession();
-> 29 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-     |                    ^
-  30 |     method: "POST",
-  31 |     headers: {
-  32 |       "Content-Type": "application/json", {
-  digest: '2770552682',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- POST /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 694ms
- ⨯ TypeError: fetch failed
-    at async authFetchGraphQL (src\lib\fetchGraphQL.ts:29:20)
-    at async getPostLikeData (src\lib\actions\likeActions.ts:11:16)
-  27 | export const authFetchGraphQL = async (query: string, variables = {}) => {
-  28 |   const session = await getSession();
-> 29 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-     |                    ^
-  30 |     method: "POST",
-  31 |     headers: {
-  32 |       "Content-Type": "application/json", {
-  digest: '3503161902',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- POST /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 755ms
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async getPostComments (src\lib\actions\commentActions.ts:19:16)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '1044731829',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- POST /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 581ms
- ⨯ TypeError: fetch failed
-    at async authFetchGraphQL (src\lib\fetchGraphQL.ts:29:20)
-    at async getPostLikeData (src\lib\actions\likeActions.ts:11:16)
-  27 | export const authFetchGraphQL = async (query: string, variables = {}) => {
-  28 |   const session = await getSession();
-> 29 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-     |                    ^
-  30 |     method: "POST",
-  31 |     headers: {
-  32 |       "Content-Type": "application/json", {
-  digest: '3503161902',
- POST /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 929ms
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async getPostComments (src\lib\actions\commentActions.ts:19:16)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '1044731829',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- POST /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 1479ms
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async fetchPostById (src\lib\actions\postActions.ts:22:16)
-    at async PostPage (src\app\blog\[slug]\[id]\page.tsx:16:16)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '3754538694',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- GET /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 1138ms
- ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '2106348812' }
- GET /favicon.ico 200 in 1065ms
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async fetchPostById (src\lib\actions\postActions.ts:22:16)
-    at async PostPage (src\app\blog\[slug]\[id]\page.tsx:16:16)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '3754538694',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
-}
- GET /blog/deficio-amo-tabula-tabernus-ea-cursus-pecco-abeo-vilicus-patrocinor/43 500 in 724ms
- GET /favicon.ico 200 in 972ms
- GET / 200 in 1883ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 1365ms
- GET /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 454ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 1899ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 2200ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 1063ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 878ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 312ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 281ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 244ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 346ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 183ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 219ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 280ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 174ms
- POST /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 222ms
- GET /blog/talus-acsi-cuppedia-inventore-praesentium-officia-amaritudo-abscido-adversus-aqua/6 200 in 237ms
- POST /blog/talus-acsi-cuppedia-inventore-praesentium-officia-amaritudo-abscido-adversus-aqua/6 200 in 176ms
- POST /blog/talus-acsi-cuppedia-inventore-praesentium-officia-amaritudo-abscido-adversus-aqua/6 200 in 181ms
- GET /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 236ms
- POST /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 173ms
- POST /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 211ms
- POST /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 231ms
- POST /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 225ms
- GET /user/posts 200 in 361ms
- ✓ Compiled in 1511ms
- ✓ Compiled in 234ms
- ✓ Compiled in 406ms
- ✓ Compiled /user/posts in 207ms
- GET /user/posts 200 in 589ms
- ✓ Compiled in 154ms
- ✓ Compiled /user/posts in 101ms
- GET /user/posts 200 in 455ms
- ✓ Compiled in 158ms
- ✓ Compiled /user/posts in 112ms
- GET /user/posts 200 in 583ms
- ✓ Compiled in 172ms
- ✓ Compiled /user/posts in 106ms
- GET /user/posts 200 in 594ms
- ✓ Compiled in 210ms
- ✓ Compiled /user/posts in 127ms
- GET /user/posts 200 in 579ms
- ✓ Compiled in 269ms
- ✓ Compiled /user/posts in 141ms
- GET /user/posts 200 in 521ms
- GET /user/user/posts/1/edit 404 in 172ms
- GET /user/user/posts/1/edit 404 in 328ms
- GET /user/posts 200 in 1734ms
- ✓ Compiled in 162ms
- ✓ Compiled /user/posts in 108ms
- GET /user/posts 200 in 831ms
- ✓ Compiled in 170ms
- ✓ Compiled /user/posts in 103ms
- GET /user/posts 200 in 655ms
- ✓ Compiled in 169ms
- ✓ Compiled /user/posts in 127ms
- GET /user/posts 200 in 701ms
- ✓ Compiled in 142ms
- ✓ Compiled /user/posts in 114ms
- GET /user/posts 200 in 690ms
- ✓ Compiled in 208ms
- ✓ Compiled /user/posts in 102ms
- GET /user/posts 200 in 600ms
- ✓ Compiled in 189ms
- ✓ Compiled /user/posts in 115ms
- GET /user/posts 200 in 566ms
- ✓ Compiled in 144ms
- ✓ Compiled /user/posts in 126ms
- GET /user/posts 200 in 540ms
- ✓ Compiled in 142ms
- ✓ Compiled /user/posts in 112ms
- GET /user/posts 200 in 491ms
- ✓ Compiled in 248ms
- ✓ Compiled /user/posts in 170ms
- GET /user/posts 200 in 733ms
- ✓ Compiled in 333ms
- ✓ Compiled /user/posts in 210ms
- GET /user/posts 200 in 860ms
- ✓ Compiled in 229ms
+ ✓ Compiled /_not-found/page in 760ms
+ GET /auth/sign 404 in 1062ms
+ ✓ Compiled middleware in 13ms
+ ✓ Compiled in 325ms
+ GET /auth/sign 404 in 234ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 379ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 948ms
+ GET /auth/signin 200 in 1233ms
+ ✓ Compiled middleware in 14ms
+ ✓ Compiled in 251ms
+ GET /auth/signin 200 in 417ms
+ ✓ Compiled middleware in 3ms
+ GET /auth/signin 200 in 667ms
+ GET /auth/signin 200 in 223ms
+ ✓ Compiled in 279ms
+ GET / 200 in 456ms
+ POST /auth/signin 303 in 821ms
+ ○ Compiling /user/create-post ...
+ ✓ Compiled /user/create-post in 912ms
+ GET /user/create-post 200 in 1046ms
+ ✓ Compiled in 876ms
+ ✓ Compiled /user/create-post in 196ms
+ GET /user/create-post 200 in 974ms
  ○ Compiling /user/posts ...
- ✓ Compiled /user/posts in 593ms
- GET /user/posts 200 in 1551ms
- ✓ Compiled in 169ms
- ✓ Compiled /user/posts in 116ms
- GET /user/posts 200 in 900ms
+ ✓ Compiled /user/posts in 1043ms
+ GET /user/posts 200 in 1817ms
+ ✓ Compiled in 211ms
+ ✓ Compiled /user/posts in 132ms
+ GET /user/posts 200 in 941ms
+ GET /user/posts 200 in 506ms
+ ✓ Compiled in 168ms
+ ✓ Compiled /user/posts in 109ms
+ GET /user/posts 200 in 764ms
+ GET /user/posts 200 in 477ms
+ ✓ Compiled in 151ms
+ ✓ Compiled /user/posts in 106ms
+ GET /user/posts 200 in 808ms
+ GET /user/posts 200 in 551ms
+ ✓ Compiled in 145ms
+ ✓ Compiled /user/posts in 123ms
+ GET /user/posts 200 in 717ms
+ GET /user/posts 200 in 368ms
+ GET /user/posts 200 in 348ms
+ GET /user/posts 200 in 401ms
+ ✓ Compiled /user/create-post in 65ms
+ GET /user/create-post 200 in 191ms
+ ✓ Compiled in 162ms
+ ✓ Compiled /user/create-post in 118ms
+ GET /user/create-post 200 in 526ms
+ ✓ Compiled in 154ms
+ GET /user/create-post 404 in 381ms
+ ✓ Compiled /user/create-post in 145ms
+ GET /user/create-post 200 in 1069ms
  ✓ Compiled in 184ms
- ✓ Compiled /user/posts in 149ms
- GET /user/posts 200 in 547ms
- ✓ Compiled in 174ms
- ✓ Compiled /user/posts in 129ms
- GET /user/posts 200 in 508ms
- ✓ Compiled in 205ms
- ✓ Compiled /user/posts in 111ms
- GET /user/posts 200 in 554ms
- ✓ Compiled in 248ms
- ✓ Compiled /user/posts in 163ms
- GET /user/posts 200 in 620ms
- GET /user/posts 200 in 1545ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 412ms
- ✓ Compiled in 312ms
- ✓ Compiled /user/posts in 231ms
- GET /user/posts 200 in 896ms
- ✓ Compiled in 164ms
- ✓ Compiled /user/posts in 141ms
- GET /user/posts 200 in 720ms
+ ✓ Compiled /user/create-post in 115ms
+ GET /user/create-post 200 in 513ms
+ ✓ Compiled in 258ms
+ ✓ Compiled /user/create-post in 153ms
+ GET /user/create-post 200 in 863ms
  ✓ Compiled in 166ms
- ✓ Compiled /user/posts in 131ms
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- ⨯ ReferenceError: currentPage is not defined
-    at PostListItem (src\app\user\posts\_components\postListItem.tsx:36:24)
-  34 |       </div>
-  35 |       <PostActions postId={post.id}/>
-> 36 |       <Pagination {...{currentPage,totalPages}}/>
-     |                        ^
-  37 |     </div>
-  38 |   );
-  39 | }; {
-  digest: '2311602831'
-}
- GET /user/posts 200 in 668ms
- ✓ Compiled in 143ms
- ✓ Compiled /user/posts in 103ms
- GET /user/posts 200 in 1763ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 384ms
- ✓ Compiled in 120ms
- ✓ Compiled /user/posts in 143ms
- GET /user/posts 200 in 746ms
- ✓ Compiled in 164ms
- ✓ Compiled /user/posts in 118ms
- ⨯ ReferenceError: Pagination is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:23:14)
-  21 |         <PostListItem post={post} key={post.id}/>
-  22 |       ))}
-> 23 |             <Pagination {...{currentPage,totalPages}}/>
-     |              ^
-  24 |     </>
-  25 |   );
-  26 | }; {
-  digest: '3949836684'
-}
- GET /user/posts 200 in 345ms
- ✓ Compiled in 144ms
- ✓ Compiled /user/posts in 143ms
- ⨯ ReferenceError: Pagination is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:23:8)
-  21 |         <PostListItem post={post} key={post.id} />
-  22 |       ))}
-> 23 |       <Pagination {...{ currentPage, totalPages }} />
-     |        ^
-  24 |     </>
-  25 |   );
-  26 | }; {
-  digest: '3949836684'
-}
- GET /user/posts 500 in 1073ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 467ms
- GET /favicon.ico 200 in 479ms
- ✓ Compiled in 156ms
- ✓ Compiled /user/posts in 121ms
- GET /user/posts 200 in 1638ms
+ ✓ Compiled /user/create-post in 127ms
+ GET /user/create-post 200 in 515ms
+ ✓ Compiled in 238ms
+ ✓ Compiled /user/create-post in 199ms
+ GET /user/create-post 200 in 547ms
+ ✓ Compiled in 236ms
+ ✓ Compiled /user/create-post in 217ms
+ GET /user/create-post 200 in 574ms
+ ✓ Compiled in 161ms
+ ✓ Compiled /user/create-post in 130ms
+ GET /user/create-post 200 in 571ms
+ ✓ Compiled in 278ms
+ ✓ Compiled /user/create-post in 185ms
+ GET /user/create-post 200 in 501ms
+ ✓ Compiled in 184ms
+ ✓ Compiled /user/create-post in 107ms
+ GET /user/create-post 200 in 556ms
+ GET /user/posts 200 in 373ms
+ GET /user/create-post 200 in 177ms
+ ✓ Compiled in 529ms
+ ✓ Compiled /user/create-post in 223ms
+ GET /user/create-post 200 in 958ms
+ ✓ Compiled in 186ms
+ ✓ Compiled in 155ms
+ GET /user/create-post 200 in 1002ms
  GET /favicon.ico?favicon.0b3bf435.ico 200 in 517ms
- ✓ Compiled in 126ms
- ✓ Compiled /user/posts in 129ms
- ⨯ ReferenceError: currentPage is not defined
-    at PostList (src\app\user\posts\_components\postList.tsx:24:25)
-  22 |         <PostListItem post={post} key={post.id} />
-  23 |       ))}
-> 24 |       <Pagination {...{ currentPage, totalPages }} />
-     |                         ^
-  25 |     </>
-  26 |   );
-  27 | }; {
-  digest: '2776452104'
-}
- GET /user/posts 200 in 360ms
- ✓ Compiled in 147ms
- ✓ Compiled /user/posts in 112ms
- GET /user/posts 200 in 1551ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 406ms
- GET /user/posts?page=2 200 in 327ms
- GET /user/posts?page=3 200 in 276ms
- GET /user/posts?page=4 200 in 230ms
- ⨯ upstream image response timed out for https://picsum.photos/seed/JZVVqZTf6/640/480
- GET /user/posts?page=2 200 in 426ms
+ ✓ Compiled in 208ms
+ ✓ Compiled in 241ms
+ ✓ Compiled in 185ms
+ ✓ Compiled in 184ms
+ ✓ Compiled in 173ms
+ ✓ Compiled in 211ms
+ ✓ Compiled in 210ms
+ ✓ Compiled in 184ms
+ ✓ Compiled in 151ms
+ ✓ Compiled in 194ms
+ ✓ Compiled /user/create-post in 127ms
+ GET /user/create-post 200 in 479ms
+ ✓ Compiled in 141ms
+ ✓ Compiled /user/create-post in 156ms
+ GET /user/create-post 200 in 526ms
+ ✓ Compiled in 149ms
+ ✓ Compiled /user/create-post in 155ms
+ GET /user/create-post 200 in 316ms
+ ✓ Compiled in 204ms
+ ✓ Compiled /user/create-post in 130ms
+ GET /user/create-post 200 in 582ms
+ ✓ Compiled in 183ms
+ ✓ Compiled /user/create-post in 118ms
+ GET /user/create-post 200 in 480ms
+ ✓ Compiled in 167ms
+ ✓ Compiled /user/create-post in 193ms
+ GET /user/create-post 200 in 541ms
+ ✓ Compiled in 160ms
+ ✓ Compiled /user/create-post in 112ms
+ GET /user/create-post 200 in 497ms
  ✓ Compiled in 176ms
- ✓ Compiled /user/posts in 137ms
- GET /user/posts?page=2 200 in 635ms
- ✓ Compiled in 137ms
- ✓ Compiled /user/posts in 133ms
- GET /user/posts?page=2 200 in 646ms
- ✓ Compiled in 140ms
- ✓ Compiled /user/posts in 148ms
- GET /user/posts?page=2 200 in 721ms
- GET /user/posts?page=3 200 in 280ms
- GET /user/posts?page=4 200 in 220ms
- GET /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 292ms
- POST /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 169ms
- POST /blog/corroboro-libero-adinventitias-umquam-caste/11 200 in 185ms
- GET / 200 in 1064ms
- GET /?page=34 200 in 207ms
- GET /?page=33 200 in 273ms
- ✓ Compiled in 518ms
- ✓ Compiled / in 230ms
- GET /?page=33 200 in 714ms
- GET /?page=33 200 in 413ms
- GET /?page=31 200 in 346ms
- GET /?page=34 200 in 255ms
- GET /?page=33 200 in 234ms
- GET /blog/velut-virgo-vaco/400 200 in 333ms
- POST /blog/velut-virgo-vaco/400 200 in 269ms
- POST /blog/velut-virgo-vaco/400 200 in 178ms
+ ✓ Compiled /user/create-post in 141ms
+ GET /user/create-post 200 in 564ms
+ ✓ Compiled in 169ms
+ ✓ Compiled in 144ms
+ ✓ Compiled in 185ms
+ ✓ Compiled in 249ms
+ ✓ Compiled in 174ms
+ ✓ Compiled in 182ms
+ ✓ Compiled in 177ms
+ ✓ Compiled in 215ms
+ ✓ Compiled in 210ms
+ ✓ Compiled in 305ms
+ ✓ Compiled in 184ms
+ ✓ Compiled in 200ms
+ ✓ Compiled in 223ms
+ ✓ Compiled in 154ms
+ ✓ Compiled in 233ms
+ ✓ Compiled in 193ms
+ ✓ Compiled in 191ms
+ ✓ Compiled /user/create-post in 210ms
+ GET /user/create-post 200 in 693ms
+ ✓ Compiled in 230ms
+ ✓ Compiled in 175ms
+ ✓ Compiled /user/create-post in 181ms
+ GET /user/create-post 200 in 687ms
+ ✓ Compiled in 150ms
+ ✓ Compiled in 200ms
+ ✓ Compiled /user/create-post in 112ms
+ GET /user/create-post 200 in 439ms
+ ✓ Compiled in 310ms
+ ✓ Compiled /user/create-post in 201ms
+ ✓ Compiled in 223ms
+ GET /user/create-post 200 in 987ms
+ ✓ Compiled in 175ms
+ ✓ Compiled in 190ms
+ ✓ Compiled in 143ms
+ ✓ Compiled in 249ms
+ ✓ Compiled in 196ms
+ ✓ Compiled in 193ms
+ ✓ Compiled in 174ms
+ ✓ Compiled in 218ms
+ ✓ Compiled in 171ms
+ ✓ Compiled in 186ms
+ ✓ Compiled in 196ms
+ ✓ Compiled in 242ms
+ ✓ Compiled in 203ms
+ ✓ Compiled in 216ms
+ ✓ Compiled in 357ms
+ ✓ Compiled in 204ms
+ ✓ Compiled in 302ms
+ ✓ Compiled in 201ms
+ ✓ Compiled in 253ms
+ ✓ Compiled in 245ms
+ GET /user/create-post?title=&content=&thumbnail=&title= 200 in 1339ms
+ ✓ Compiled in 239ms
+ ✓ Compiled in 181ms
+ ✓ Compiled in 191ms
+ ✓ Compiled in 192ms
+ ✓ Compiled in 179ms
+ ✓ Compiled in 165ms
+ ✓ Compiled in 280ms

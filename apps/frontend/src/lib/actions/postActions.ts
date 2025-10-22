@@ -12,6 +12,7 @@ import { transformTakeSkip } from "../helpers";
 import { PostFormState } from "../types/formState";
 import { Post } from "../types/modelTypes";
 import { postFormSchema } from "../zodSchemas/postFormSchema";
+import { uploadThumbnail } from "../upload";
 
 export const fetchPosts = async ({
   page,
@@ -56,7 +57,10 @@ export async function savePost(
   const validatedFields = postFormSchema.safeParse(
     Object.fromEntries(formData.entries())
   );
-  const thumbnailUrl = "";
+  let thumbnailUrl = "";
+
+  if (validatedFields.data?.thumbnail)
+    thumbnailUrl = await uploadThumbnail(validatedFields.data.thumbnail);
   if (!validatedFields.success)
     return {
       data: Object.fromEntries(formData.entries()),

@@ -58,28 +58,26 @@ export async function savePost(
   const validatedFields = postFormSchema.safeParse(
     Object.fromEntries(formData.entries())
   );
-  let thumbnailUrl = "";
 
-  if (validatedFields.data?.thumbnail)
-    thumbnailUrl = await uploadThumbnail(validatedFields.data.thumbnail);
   if (!validatedFields.success)
     return {
       data: Object.fromEntries(formData.entries()),
       errors: validatedFields.error.flatten().fieldErrors,
     };
-  console.log("validatedFields.data:", validatedFields.data);
+  let thumbnailUrl = "";
+  if (validatedFields.data.thumbnail)
+    thumbnailUrl = await uploadThumbnail(validatedFields.data.thumbnail);
 
   const data = await authFetchGraphQL(print(CREATE_POST_MUTATION), {
-    createPostInput: {
+    input: {
       ...validatedFields.data,
       thumbnail: thumbnailUrl,
     },
   });
 
-  if (data) return { message: "Post created successfully!", ok: true };
+  if (data) return { message: "Success! New Post Saved", ok: true };
   return {
-    message: "Failed to create post.",
-    ok: false,
+    message: "Oops, Something Went Wrong",
     data: Object.fromEntries(formData.entries()),
   };
 }

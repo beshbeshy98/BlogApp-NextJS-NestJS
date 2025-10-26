@@ -442,3 +442,145 @@ GraphQL fetch failed: {
  GET /user/posts/407/update 200 in 1030ms
  GET /favicon.ico?favicon.0b3bf435.ico 200 in 374ms
 {
+  data: {
+    data: {
+      path: 'Screenshot_16.png_1761478793236',
+      id: 'b6301836-f53f-4ca0-a244-2d1493f6ca5b',
+      fullPath: 'thumbnails/Screenshot_16.png_1761478793236'
+    },
+    error: null
+  }
+}
+ POST /user/posts/407/update 200 in 2152ms
+ ✓ Compiled /user/posts in 130ms
+ GET /user/posts 200 in 633ms
+ GET /user/posts?page=3 200 in 348ms
+ ✓ Compiled /user/create-post in 121ms
+ GET /user/create-post 200 in 387ms
+{
+  data: {
+    data: {
+      path: 'Screenshot_17.png_1761478890165',
+      id: '0a91b92c-c30c-4fc1-af95-bf9ab39d6206',
+      fullPath: 'thumbnails/Screenshot_17.png_1761478890165'
+    },
+    error: null
+  }
+}
+validatedFields.data: {
+  postId: undefined,
+  title: 'xxxxxxxxxx',
+  content: 'ccccccccccccccccccccccc',
+  tags: [ 'vvvvvvv' ],
+  thumbnail: File {
+    size: 125522,
+    type: 'image/png',
+    name: 'Screenshot_17.png',
+    lastModified: 1761478890160
+  },
+  published: true
+}
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Bad Request Exception',
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}
+ ⨯ Error: Bad Request Exception
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async savePost (src\lib\actions\postActions.ts:72:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '3923938143'
+}
+ POST /user/create-post 500 in 2172ms
+ ✓ Compiled in 339ms
+ ⨯ ./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx:3:1
+Export savePost doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { savePost } [36mfrom[39m [32m"@/lib/actions/postActions"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { useActionState } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mUpsertPostForm[39m [36mfrom[39m [32m"./upsertPostForm"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export savePost was not found in module [project]/apps/frontend/src/lib/actions/postActions.ts [app-client] (ecmascript).
+Did you mean to import saveNewPost?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx
+    ./apps/frontend/src/app/user/create-post/page.tsx
+
+
+
+./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx:3:1
+Export savePost doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { savePost } [36mfrom[39m [32m"@/lib/actions/postActions"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { useActionState } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mUpsertPostForm[39m [36mfrom[39m [32m"./upsertPostForm"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export savePost was not found in module [project]/apps/frontend/src/lib/actions/postActions.ts [app-ssr] (ecmascript).
+Did you mean to import saveNewPost?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx
+    ./apps/frontend/src/app/user/create-post/page.tsx
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled in 2.4s
+ ✓ Compiled /_error in 5.3s
+ GET /user/create-post 500 in 6395ms
+ GET /favicon.ico 500 in 194ms
+ ✓ Compiled in 207ms
+ ✓ Compiled in 208ms
+ ✓ Compiled /user/create-post in 184ms
+ GET /user/create-post 200 in 1317ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 349ms
+ POST /user/create-post 200 in 175ms
+{
+  data: {
+    data: {
+      path: 'undefined_1761479062735',
+      id: 'f1d3c4a5-4619-4340-9752-f96eb348683f',
+      fullPath: 'thumbnails/undefined_1761479062735'
+    },
+    error: null
+  }
+}
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Variable "$createPostInput" of required type "CreatePostInput!" was not provided.',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
+ ⨯ Error: Variable "$createPostInput" of required type "CreatePostInput!" was not provided.
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async savePost (src\lib\actions\postActions.ts:71:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"

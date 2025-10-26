@@ -80,3 +80,24 @@ export async function savePost(
     data: Object.fromEntries(formData.entries()),
   };
 }
+export async function updatePost(
+  state: PostFormState,
+  formData: FormData
+): Promise<PostFormState> {
+  const validatedFields = postFormSchema.safeParse(
+    Object.fromEntries(formData.entries())
+  );
+  if (!validatedFields.success)
+    return {
+      data: Object.fromEntries(formData.entries()),
+      errors: validatedFields.error.flatten().fieldErrors,
+    };
+
+  const postId = formData.get("postId");
+  const data = await authFetchGraphQL(print(UPDATE_POST_MUTATION), {
+    updatePostInput: {
+      postId: Number(postId),
+      ...validatedFields.data,
+    },
+  });
+}

@@ -587,3 +587,46 @@ To configure the body size limit for Server Actions, see: https://nextjs.org/doc
    - Environments: .env
 
  ✓ Starting...
+ ✓ Compiled middleware in 467ms
+ ✓ Ready in 3.3s
+ ○ Compiling /user/posts ...
+ ✓ Compiled /user/posts in 8s
+ GET /user/posts?page=3 200 in 10574ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 531ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1031ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 540ms
+ GET /user/user/posts/404/edit 404 in 790ms
+ GET /user/user/posts/404/edit 404 in 363ms
+ GET /user/posts?page=3 200 in 959ms
+ ✓ Compiled in 247ms
+ ✓ Compiled /user/posts in 252ms
+ GET /user/posts?page=3 200 in 786ms
+ ✓ Compiled in 154ms
+ ✓ Compiled /user/posts in 152ms
+ GET /user/posts?page=3 200 in 662ms
+ ✓ Compiled in 155ms
+ ✓ Compiled /user/posts in 127ms
+ GET /user/posts?page=3 200 in 545ms
+ ✓ Compiled in 143ms
+ ✓ Compiled /user/posts in 128ms
+ GET /user/posts?page=3 200 in 750ms
+ ✓ Compiled in 161ms
+ ✓ Compiled /user/posts in 126ms
+ GET /user/posts?page=3 200 in 814ms
+ ✓ Compiled in 175ms
+ ✓ Compiled /user/posts in 109ms
+ GET /user/posts?page=3 200 in 544ms
+ ✓ Compiled in 183ms
+ ✓ Compiled /user/posts in 128ms
+ GET /user/posts?page=3 200 in 567ms
+ ✓ Compiled in 151ms
+ ✓ Compiled /user/posts in 111ms
+ GET /user/posts?page=3 200 in 635ms
+ ○ Compiling / ...
+ ✓ Compiled / in 853ms
+ GET / 200 in 2011ms
+ ○ Compiling /blog/[slug]/[id] ...
+ ✓ Compiled /blog/[slug]/[id] in 1171ms
+ GET /blog/sed-harum-ambitus-spargo-viridis-cursus-reiciendis-compono-spiculum/1 200 in 2815ms

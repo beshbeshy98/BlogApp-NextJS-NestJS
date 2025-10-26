@@ -120,3 +120,11 @@ export const CREATE_POST_MUTATION = gql`
     }
   }
 `;
+
+export const UPDATE_POST_MUTATION = gql`
+  mutation updatePost($updatePostInput: UpdatePostInput!) {
+    updatePost(updatePostInput: $updatePostInput) {
+      id
+    }
+  }
+`;

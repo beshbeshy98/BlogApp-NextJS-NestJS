@@ -18,7 +18,7 @@ const PostActions = ({ postId }: Props) => {
           <TooltipTrigger asChild>
             <Link
               className="border p-2 border-yellow-500 rounded-md text-yellow-500 hover:border-yellow-70 hover:text-yellow-700 transition-colors"
-              href={`user/posts/${postId}/edit`}
+              href={`posts/${postId}/update`}
             >
               <PencilIcon className="w-4" />
             </Link>
@@ -31,7 +31,7 @@ const PostActions = ({ postId }: Props) => {
           <TooltipTrigger asChild>
             <Link
               className="border p-2 border-red-500 rounded-md text-red-500 hover:border-yellow-70 hover:text-yellow-700 transition-colors"
-              href={`user/posts/${postId}/delete`}
+              href={`posts/${postId}/delete`}
             >
               <TrashIcon className="w-4" />
             </Link>

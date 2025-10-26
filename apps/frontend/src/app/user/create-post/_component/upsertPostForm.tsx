@@ -16,16 +16,17 @@ const UpsertPostForm = ({ state, formAction }: Props) => {
   const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
-    if(state?.message)
-    toast(state?.ok ? "Success" : "Error", {
-      description: state?.message,
-    });
-  });
+    if (state?.message)
+      toast(state?.ok ? "Success" : "Error", {
+        description: state?.message,
+      });
+  }, [state]);
   return (
     <form
       action={formAction}
       className="flex flex-col gap-5 max-w-lg mx-auto [&>div>label]:text-slate-500 [&>div>input]:transition [&>div>textarea]:transition"
     >
+      <input name="postId" defaultValue={state?.data?.postId} hidden />
       <div>
         <Label htmlFor="title">Title</Label>
         <Input
@@ -58,14 +59,15 @@ const UpsertPostForm = ({ state, formAction }: Props) => {
           onChange={(e) => {
             if (e.target.files)
               setImageUrl(URL.createObjectURL(e.target.files[0]));
+            else setImageUrl("");
           }}
         />
-        {!!imageUrl && (
+        {(!!imageUrl || !!state?.data?.previousPostThumbnail) && (
           <Image
-            src={imageUrl}
-            alt="Thumbnail Preview"
+            src={(imageUrl || state?.data?.previousPostThumbnail) ?? ""}
+            alt="post thumbnail"
             width={200}
-            height={200}
+            height={150}
           />
         )}
       </div>
@@ -88,7 +90,7 @@ const UpsertPostForm = ({ state, formAction }: Props) => {
           className="mx-2 w-4"
           type="checkbox"
           name="published"
-          defaultValue={state?.data?.published}
+          defaultChecked={state?.data?.published === "on" ? true : false}
         />
         <Label htmlFor="published">Published</Label>
       </div>

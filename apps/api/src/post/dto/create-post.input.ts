@@ -1,8 +1,12 @@
-import { Field, InputType } from '@nestjs/graphql';
-import { IsBoolean, IsOptional, IsString } from 'class-validator';
+import { Field, InputType, Int } from '@nestjs/graphql';
+import { IsBoolean, IsNumber, IsOptional, IsString } from 'class-validator';
 
 @InputType()
 export class CreatePostInput {
+  @IsNumber()
+  @Field(() => Int, { nullable: true })
+  postId: number;
+
   @IsString()
   @Field()
   title: string;

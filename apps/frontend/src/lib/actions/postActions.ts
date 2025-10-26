@@ -7,12 +7,13 @@ import {
   GET_POST_BY_ID,
   GET_POSTS,
   GET_USER_POSTS,
+  UPDATE_POST_MUTATION,
 } from "../gqlQueries";
 import { transformTakeSkip } from "../helpers";
 import { PostFormState } from "../types/formState";
 import { Post } from "../types/modelTypes";
-import { postFormSchema } from "../zodSchemas/postFormSchema";
 import { uploadThumbnail } from "../upload";
+import { postFormSchema } from "../zodSchemas/postFormSchema";
 
 export const fetchPosts = async ({
   page,
@@ -66,6 +67,8 @@ export async function savePost(
       data: Object.fromEntries(formData.entries()),
       errors: validatedFields.error.flatten().fieldErrors,
     };
+  console.log("validatedFields.data:", validatedFields.data);
+
   const data = await authFetchGraphQL(print(CREATE_POST_MUTATION), {
     createPostInput: {
       ...validatedFields.data,
@@ -93,11 +96,22 @@ export async function updatePost(
       errors: validatedFields.error.flatten().fieldErrors,
     };
 
-  const postId = formData.get("postId");
+  const { thumbnail, ...inputs } = validatedFields.data;
+
+  let thumbnailURL = "";
+  if (thumbnail) {
+    thumbnailURL = await uploadThumbnail(thumbnail);
+  }
   const data = await authFetchGraphQL(print(UPDATE_POST_MUTATION), {
     updatePostInput: {
-      postId: Number(postId),
-      ...validatedFields.data,
+      ...inputs,
+      ...(thumbnailURL && { thumbnail: thumbnailURL }),
     },
   });
+  if (data) return { message: "Post updated successfully!", ok: true };
+  return {
+    message: "Failed to update post.",
+    ok: false,
+    data: Object.fromEntries(formData.entries()),
+  };
 }

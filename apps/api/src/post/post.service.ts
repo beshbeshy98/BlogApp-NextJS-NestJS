@@ -111,13 +111,13 @@ export class PostService {
     });
 
     if (!authorIdMatched) throw new UnauthorizedException();
-
+    const {postId , ...data} = updatePostInput;
     return this.prisma.post.update({
       where: {
-        id: updatePostInput.postId,
+        id: postId,
       },
       data: {
-        ...updatePostInput,
+        ...data,
         tags: {
           connectOrCreate: updatePostInput.tags?.map((tag) => ({
             where: { name: tag },

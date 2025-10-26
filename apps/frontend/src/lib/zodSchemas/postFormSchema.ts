@@ -1,6 +1,11 @@
 import { z } from "zod";
 
 export const postFormSchema = z.object({
+  postId: z
+    .string()
+    .optional()
+    .refine((val) => !val || !isNaN(parseInt(val)))
+    .transform((val) => (val ? parseInt(val) : undefined)),
   title: z.string().min(5).max(100),
   content: z.string().min(20),
   tags: z
@@ -9,5 +14,8 @@ export const postFormSchema = z.object({
     .refine((value) => value.split(",").every((tag) => tag.trim() !== ""))
     .transform((val) => val.split(",")),
   thumbnail: z.instanceof(File).optional(),
-  published: z.string().transform((val) => val === "on"),
+  published: z
+    .any()
+    .transform((val) => val === "on")
+    .pipe(z.boolean()),
 });

@@ -102,7 +102,7 @@ export class PostService {
     });
   }
 
-  async updatePost(userId: number, updatePostInput: UpdatePostInput) {
+  async updatePost(updatePostInput: UpdatePostInput,userId: number) {
     const authorIdMatched = await this.prisma.post.findUnique({
       where: {
         id: updatePostInput.postId,

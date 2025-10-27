@@ -6,7 +6,10 @@ import { AuthService } from '../auth.service';
 
 @Injectable()
 export class GoogleStrategy extends PassportStrategy(Strategy) {
-  constructor(private configService: ConfigService, private readonly authService:AuthService) {
+  constructor(
+    private configService: ConfigService,
+    private readonly authService: AuthService,
+  ) {
     super({
       clientID: configService.get<string>('GOOGLE_CLIENT_ID'),
       clientSecret: configService.get<string>('GOOGLE_CLIENT_SECRET'),
@@ -19,14 +22,14 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
     refreshToken: string,
     profile: any,
     done: VerifyCallback,
-  ){
+  ) {
     const user = await this.authService.validateGoogleUser({
-      email:profile.emails[0].value,
-      name:profile.displayName,
-      avatar:profile.photos[0].value,
-      password:""
-    })
-    
-    done(null,user)
-  };
+      email: profile.emails[0].value,
+      name: profile.displayName,
+      avatar: profile.photos[0].value,
+      password: '',
+    });
+
+    done(null, user);
+  }
 }

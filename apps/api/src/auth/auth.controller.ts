@@ -16,7 +16,7 @@ export class AuthController {
   async googleCallback(@Request() req, @Res() res: Response) {
     // console.log('user: ', req.user);
     const userData = await this.authService.login(req.user);
-
+    console.log('userData: ', userData);
     res.redirect(
       `http://localhost:3000/api/auth/google/callback?userId=${userData.id}&name=${userData.name}&avatar=${userData.avatar}&accessToken=${userData.accessToken}`,
     );

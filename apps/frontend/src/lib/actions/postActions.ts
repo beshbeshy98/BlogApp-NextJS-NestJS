@@ -4,6 +4,7 @@ import { print } from "graphql";
 import { authFetchGraphQL, fetchGraphQL } from "../fetchGraphQL";
 import {
   CREATE_POST_MUTATION,
+  DELETE_POST_MUTATION,
   GET_POST_BY_ID,
   GET_POSTS,
   GET_USER_POSTS,
@@ -112,4 +113,12 @@ export async function updatePost(
     ok: false,
     data: Object.fromEntries(formData.entries()),
   };
+
+
+}
+export async function deletePost(postId: number): Promise<boolean> {
+  const data = await authFetchGraphQL(print(DELETE_POST_MUTATION), {
+    postId,
+  });
+  return data.deletePost as boolean;
 }

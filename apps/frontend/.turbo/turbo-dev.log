@@ -4,583 +4,98 @@
 
    ▲ Next.js 15.5.4 (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://172.22.112.1:3000
+   - Network:      http://172.18.80.1:3000
    - Environments: .env
 
  ✓ Starting...
  ○ Compiling middleware ...
- ✓ Compiled middleware in 798ms
- ✓ Ready in 4.6s
- ○ Compiling /user/create-post ...
- ✓ Compiled /user/create-post in 6.9s
- GET /user/create-post 200 in 8334ms
+ ✓ Compiled middleware in 585ms
+ ✓ Ready in 3.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.3s
+ GET / 200 in 8207ms
+ ✓ Compiled /api/auth/signout in 422ms
+ GET /api/auth/signout 307 in 862ms
+ GET / 200 in 560ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 884ms
+ GET /auth/signin 200 in 1195ms
+ ✓ Compiled /api/auth/google/callback in 241ms
+ GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1NzY1NzcsImV4cCI6MTc2MTY2Mjk3N30.kEGWo99ZOM-NiM2otwQlDuFQrshr53MfBaaWORj7vas 307 in 666ms
+ GET / 200 in 468ms
+ GET /api/auth/signout 307 in 344ms
+ GET / 200 in 620ms
+ GET /auth/signin 200 in 229ms
+ GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1NzY1OTcsImV4cCI6MTc2MTY2Mjk5N30.YiOgeVAnGdh8UpYX57OKEHdTtftUbVIV-Dgl0Oky_eM 307 in 363ms
+ GET / 200 in 590ms
+ ⨯ upstream image response timed out for https://picsum.photos/seed/FNshvoTh/640/480?grayscale
+ GET / 200 in 1052ms
  ○ Compiling /favicon.ico ...
- ✓ Compiled /favicon.ico in 612ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 1086ms
-{
-  data: {
-    data: {
-      path: 'WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761476195141',
-      id: '9210a5b1-cbf7-41a9-9dd8-4da1c65e006f',
-      fullPath: 'thumbnails/WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761476195141'
-    },
-    error: null
-  }
+ ✓ Compiled /favicon.ico in 925ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1493ms
+ ⨯ upstream image response timed out for https://picsum.photos/seed/FNshvoTh/640/480?grayscale
+ ⨯ TypeError: fetch failed
+    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
+    at async fetchPosts (src\lib\actions\postActions.ts:27:16)
+    at async Home (src\app\page.tsx:11:33)
+  3 |
+  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
+> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
+    |                    ^
+  6 |     method: "POST",
+  7 |     headers: {
+  8 |       "Content-Type": "application/json", {
+  digest: '2316049681',
+  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
 }
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
+ GET / 500 in 984ms
+ GET /favicon.ico 200 in 1367ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1377ms
+ GET / 200 in 1129ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 507ms
+ GET /api/auth/signout 307 in 428ms
+ GET / 200 in 1186ms
+ GET /auth/signin 200 in 382ms
+ GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1NzczODYsImV4cCI6MTc2MTY2Mzc4Nn0.XHGsSIYqDzA9hT21oy40DHqA7T7XzOWJW71fCfn-qDA 307 in 491ms
+ GET / 200 in 1424ms
+ GET /api/auth/signout 307 in 425ms
+ GET / 200 in 873ms
+ GET /auth/signin 200 in 179ms
+ GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1Nzc0MTUsImV4cCI6MTc2MTY2MzgxNX0.v4sJeQbONlhP-Ge3k3qLw5zrzoLUdEmFm8vactQ8D_0 307 in 365ms
+ GET / 200 in 468ms
+ GET /api/auth/signout 307 in 361ms
+ ⨯ TypeError: fetch failed
+    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
+    at async fetchPosts (src\lib\actions\postActions.ts:27:16)
+    at async Home (src\app\page.tsx:11:33)
+  3 |
+  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
+> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
+    |                    ^
+  6 |     method: "POST",
+  7 |     headers: {
+  8 |       "Content-Type": "application/json", {
+  digest: '2316049681',
+  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
 }
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:70:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '2402884510'
+ GET / 500 in 407ms
+ GET /favicon.ico 200 in 477ms
+ ⨯ TypeError: fetch failed
+    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
+    at async fetchPosts (src\lib\actions\postActions.ts:27:16)
+    at async Home (src\app\page.tsx:11:33)
+  3 |
+  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
+> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
+    |                    ^
+  6 |     method: "POST",
+  7 |     headers: {
+  8 |       "Content-Type": "application/json", {
+  digest: '2316049681',
+  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
 }
- POST /user/create-post 500 in 2228ms
- ✓ Compiled in 261ms
- ✓ Compiled /user/create-post in 188ms
- GET /user/create-post 200 in 807ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 400ms
- ✓ Compiled in 158ms
- ✓ Compiled /user/create-post in 178ms
- GET /user/create-post 200 in 486ms
- ✓ Compiled in 165ms
- ✓ Compiled /user/create-post in 117ms
- GET /user/create-post 200 in 389ms
-{
-  data: {
-    data: {
-      path: 'WhatsApp Image 2025-03-03 at 19.15.20_c1070073.jpg_1761476579377',
-      id: 'c078b92d-76ab-4460-8f60-67aba07358b9',
-      fullPath: 'thumbnails/WhatsApp Image 2025-03-03 at 19.15.20_c1070073.jpg_1761476579377'
-    },
-    error: null
-  }
-}
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
-}
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:70:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '2402884510'
-}
- POST /user/create-post 500 in 2096ms
- ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- ✓ Compiled in 191ms
- ✓ Compiled /user/create-post in 200ms
- GET /user/create-post 200 in 1268ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 439ms
- ✓ Compiled in 208ms
- ✓ Compiled /user/create-post in 154ms
- GET /user/create-post 200 in 445ms
- ✓ Compiled in 189ms
- ✓ Compiled /user/create-post in 132ms
- GET /user/create-post 200 in 442ms
-{
-  data: {
-    data: {
-      path: 'WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761476725248',
-      id: '2e2aacd4-bf2c-4ec1-a9a4-5154de39527f',
-      fullPath: 'thumbnails/WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761476725248'
-    },
-    error: null
-  }
-}
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Variable "$createPostInput" got invalid value { thumbnail: "https://uvcsuuuzqzedgukzozmt.supabase.co/storage/v1/object/public/thumbnails/WhatsApp%20Image%202025-03-03%20at%2019.16.20_17600bea.jpg_1761476725248" }; Field "title" of required type "String!" was not provided.',
-      locations: [Array],
-      extensions: [Object]
-    },
-    {
-      message: 'Variable "$createPostInput" got invalid value { thumbnail: "https://uvcsuuuzqzedgukzozmt.supabase.co/storage/v1/object/public/thumbnails/WhatsApp%20Image%202025-03-03%20at%2019.16.20_17600bea.jpg_1761476725248" }; Field "content" of required type "String!" was not provided.',
-      locations: [Array],
-      extensions: [Object]
-    },
-    {
-      message: 'Variable "$createPostInput" got invalid value { thumbnail: "https://uvcsuuuzqzedgukzozmt.supabase.co/storage/v1/object/public/thumbnails/WhatsApp%20Image%202025-03-03%20at%2019.16.20_17600bea.jpg_1761476725248" }; Field "published" of required type "Boolean!" was not provided.',
-      locations: [Array],
-      extensions: [Object]
-    },
-    {
-      message: 'Variable "$createPostInput" got invalid value { thumbnail: "https://uvcsuuuzqzedgukzozmt.supabase.co/storage/v1/object/public/thumbnails/WhatsApp%20Image%202025-03-03%20at%2019.16.20_17600bea.jpg_1761476725248" }; Field "tags" of required type "[String!]!" was not provided.',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Variable "$createPostInput" got invalid value { thumbnail: "https://uvcsuuuzqzedgukzozmt.supabase.co/storage/v1/object/public/thumbnails/WhatsApp%20Image%202025-03-03%20at%2019.16.20_17600bea.jpg_1761476725248" }; Field "title" of required type "String!" was not provided.
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:71:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '457331231'
-}
- POST /user/create-post 500 in 1984ms
- ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- ✓ Compiled in 232ms
- ✓ Compiled /user/create-post in 195ms
- GET /user/create-post 200 in 1186ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 395ms
-{
-  data: {
-    data: {
-      path: 'WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761476793446',
-      id: '6843f613-97aa-4490-b405-114b2ba6beac',
-      fullPath: 'thumbnails/WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761476793446'
-    },
-    error: null
-  }
-}
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
-}
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:70:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '2402884510'
-}
- POST /user/create-post 500 in 2032ms
- ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- ✓ Compiled in 182ms
- GET /user/create-post 200 in 1140ms
- ✓ Compiled in 217ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 372ms
- ✓ Compiled /user/create-post in 138ms
-{
-  data: {
-    data: {
-      path: 'WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761477035557',
-      id: '6566d2d3-2e26-4376-a1ad-c27ae7f2b55c',
-      fullPath: 'thumbnails/WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761477035557'
-    },
-    error: null
-  }
-}
-validatedFields.data: {
-  postId: undefined,
-  title: 'fffffffffffffffffffffffffff',
-  content: 'gggggggggggggggggggggggggggg',
-  tags: [ 'ffff' ],
-  thumbnail: File {
-    size: 142939,
-    type: 'image/jpeg',
-    name: 'WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg',
-    lastModified: 1761477035554
-  },
-  published: true
-}
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
-}
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:72:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3923938143'
-}
- POST /user/create-post 500 in 2364ms
- ✓ Compiled in 287ms
- ✓ Compiled /user/create-post in 316ms
- ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- GET /user/create-post 200 in 2879ms
- ✓ Compiled in 5ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 765ms
- ✓ Compiled in 188ms
- ✓ Compiled /user/create-post in 155ms
- GET /user/create-post 200 in 438ms
-{
-  data: {
-    data: {
-      path: 'WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761477201519',
-      id: 'ff85fabe-e533-499e-a706-24a163e93448',
-      fullPath: 'thumbnails/WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg_1761477201519'
-    },
-    error: null
-  }
-}
-validatedFields.data: {
-  postId: undefined,
-  title: 'xxxxxxxxxxxx',
-  content: 'xxxcccccccccccccccccccccccccc',
-  tags: [ 'vvv' ],
-  thumbnail: File {
-    size: 142939,
-    type: 'image/jpeg',
-    name: 'WhatsApp Image 2025-03-03 at 19.16.20_17600bea.jpg',
-    lastModified: 1761477201515
-  },
-  published: true
-}
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
-}
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:74:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '1204963868'
-}
- POST /user/create-post 500 in 2320ms
- ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- ✓ Compiled in 174ms
- ✓ Compiled /user/create-post in 181ms
- GET /user/create-post 200 in 1025ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 409ms
- ✓ Compiled in 173ms
- ✓ Compiled in 163ms
- ⨯ [Error: Failed to load chunk server/chunks/ssr/apps_frontend_src_bc592986._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/user/create-post/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/apps/frontend/src/app/favicon.ico.mjs { IMAGE => \"[project]/apps/frontend/src/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/apps/frontend/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/apps/frontend/src/app/user/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/apps/frontend/src/app/user/create-post/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>] {
-  digest: '1584799482',
-  [cause]: SyntaxError: Unexpected token '<'
-      at <unknown> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\apps_frontend_src_bc592986._.js:320)
-}
-[Error: Failed to load chunk server/chunks/ssr/apps_frontend_src_bc592986._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/user/create-post/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/apps/frontend/src/app/favicon.ico.mjs { IMAGE => \"[project]/apps/frontend/src/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/apps/frontend/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/apps/frontend/src/app/user/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/apps/frontend/src/app/user/create-post/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>] {
-  digest: '1584799482',
-  [cause]: SyntaxError: Unexpected token '<'
-      at <unknown> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\apps_frontend_src_bc592986._.js:320)
-}
- ⨯ unhandledRejection: [Error: Failed to load chunk server/chunks/ssr/apps_frontend_src_bc592986._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/user/create-post/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/apps/frontend/src/app/favicon.ico.mjs { IMAGE => \"[project]/apps/frontend/src/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/apps/frontend/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/apps/frontend/src/app/user/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/apps/frontend/src/app/user/create-post/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>] {
-  digest: '1584799482',
-  [cause]: SyntaxError: Unexpected token '<'
-      at <unknown> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\apps_frontend_src_bc592986._.js:320)
-}
- ⨯ unhandledRejection:  [Error: Failed to load chunk server/chunks/ssr/apps_frontend_src_bc592986._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/user/create-post/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/apps/frontend/src/app/favicon.ico.mjs { IMAGE => \"[project]/apps/frontend/src/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/apps/frontend/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/apps/frontend/src/app/user/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/apps/frontend/src/app/user/create-post/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>] {
-  digest: '1584799482',
-  [cause]: SyntaxError: Unexpected token '<'
-      at <unknown> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\apps_frontend_src_bc592986._.js:320)
-}
- GET /user/create-post 500 in 3884ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 441ms
- ✓ Compiled in 141ms
- ✓ Compiled /user/create-post in 133ms
- GET /user/create-post 200 in 1067ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 383ms
- ○ Compiling /user/posts ...
- ✓ Compiled /user/posts in 961ms
- GET /user/posts 200 in 1426ms
- GET /user/posts?page=3 200 in 396ms
- ○ Compiling /user/posts/[id]/update ...
- ✓ Compiled /user/posts/[id]/update in 796ms
- GET /user/posts/407/update 200 in 2257ms
- ✓ Compiled in 213ms
- ✓ Compiled /user/posts/[id]/update in 181ms
- ✓ Compiled in 474ms
- GET /user/posts/407/update 200 in 530ms
- GET /user/posts/407/update 200 in 263ms
- GET /user/posts/407/update 200 in 413ms
- ✓ Compiled in 548ms
- ✓ Compiled /user/posts/[id]/update in 340ms
- GET /user/posts/407/update 200 in 868ms
- GET /user/posts/407/update 200 in 248ms
- GET /user/posts/407/update 200 in 217ms
- ✓ Compiled in 259ms
- ✓ Compiled /user/posts/[id]/update in 145ms
- GET /user/posts/407/update 200 in 542ms
- GET /user/posts/407/update 200 in 940ms
- GET /user/posts/407/update 200 in 359ms
- ✓ Compiled in 274ms
- ✓ Compiled /user/posts/[id]/update in 222ms
- GET /user/posts/407/update 200 in 692ms
- GET /user/posts/407/update 200 in 249ms
- GET /user/posts/407/update 200 in 239ms
- ✓ Compiled in 228ms
- ✓ Compiled /user/posts/[id]/update in 141ms
- ✓ Compiled in 407ms
- GET /user/posts/407/update 200 in 439ms
- GET /user/posts/407/update 200 in 238ms
- GET /user/posts/407/update 200 in 282ms
- ✓ Compiled /user/posts/[id]/update in 199ms
- ✓ Compiled in 532ms
- GET /user/posts/407/update 200 in 564ms
- GET /user/posts/407/update 200 in 298ms
- GET /user/posts/407/update 200 in 278ms
- ✓ Compiled in 438ms
- GET /user/posts/407/update 200 in 748ms
- ✓ Compiled in 175ms
- ✓ Compiled in 518ms
- ✓ Compiled /user/posts/[id]/update in 236ms
- GET /user/posts/407/update 200 in 553ms
- GET /user/posts/407/update 200 in 452ms
- GET /user/posts/407/update 200 in 218ms
- ✓ Compiled in 421ms
- ✓ Compiled /user/posts/[id]/update in 171ms
- GET /user/posts/407/update 200 in 575ms
- GET /user/posts/407/update 200 in 383ms
- GET /user/posts/407/update 200 in 199ms
- GET /user/posts/407/update 200 in 999ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 412ms
- ✓ Compiled in 156ms
- ✓ Compiled in 160ms
- ✓ Compiled in 156ms
- GET /user/posts/407/update 200 in 990ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 957ms
- ✓ Compiled in 161ms
- ✓ Compiled in 180ms
- ✓ Compiled /user/posts/[id]/update in 212ms
- GET /user/posts/407/update 200 in 647ms
- GET /user/posts/407/update 200 in 260ms
- GET /user/posts/407/update 200 in 1122ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 453ms
- ✓ Compiled in 167ms
- ✓ Compiled in 188ms
- GET /user/posts/407/update 200 in 1162ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 521ms
- ✓ Compiled in 145ms
- ✓ Compiled in 165ms
- ✓ Compiled in 174ms
- ✓ Compiled in 134ms
- ✓ Compiled /user/posts/[id]/update in 140ms
- GET /user/posts/407/update 200 in 542ms
- GET /user/posts/407/update 200 in 258ms
- GET /user/posts/407/update 200 in 982ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 367ms
- GET /user/posts/407/update 200 in 520ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 399ms
- ✓ Compiled in 181ms
- GET /user/posts/407/update 200 in 1155ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 481ms
- ✓ Compiled in 168ms
- GET /user/posts/407/update 200 in 1167ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 453ms
- ✓ Compiled in 243ms
- ✓ Compiled in 172ms
- ✓ Compiled /user/posts/[id]/update in 324ms
- GET /user/posts/407/update 200 in 771ms
- ✓ Compiled in 289ms
- GET /user/posts/407/update 200 in 641ms
- ✓ Compiled in 151ms
- ✓ Compiled in 185ms
- ✓ Compiled /user/posts/[id]/update in 239ms
- GET /user/posts/407/update 200 in 739ms
- GET /user/posts/407/update 200 in 309ms
- ✓ Compiled in 218ms
- ✓ Compiled in 133ms
- ✓ Compiled in 163ms
- ✓ Compiled /user/posts/[id]/update in 199ms
- GET /user/posts/407/update 200 in 584ms
- GET /user/posts/407/update 200 in 260ms
- GET /user/posts/407/update 200 in 1030ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 374ms
-{
-  data: {
-    data: {
-      path: 'Screenshot_16.png_1761478793236',
-      id: 'b6301836-f53f-4ca0-a244-2d1493f6ca5b',
-      fullPath: 'thumbnails/Screenshot_16.png_1761478793236'
-    },
-    error: null
-  }
-}
- POST /user/posts/407/update 200 in 2152ms
- ✓ Compiled /user/posts in 130ms
- GET /user/posts 200 in 633ms
- GET /user/posts?page=3 200 in 348ms
- ✓ Compiled /user/create-post in 121ms
- GET /user/create-post 200 in 387ms
-{
-  data: {
-    data: {
-      path: 'Screenshot_17.png_1761478890165',
-      id: '0a91b92c-c30c-4fc1-af95-bf9ab39d6206',
-      fullPath: 'thumbnails/Screenshot_17.png_1761478890165'
-    },
-    error: null
-  }
-}
-validatedFields.data: {
-  postId: undefined,
-  title: 'xxxxxxxxxx',
-  content: 'ccccccccccccccccccccccc',
-  tags: [ 'vvvvvvv' ],
-  thumbnail: File {
-    size: 125522,
-    type: 'image/png',
-    name: 'Screenshot_17.png',
-    lastModified: 1761478890160
-  },
-  published: true
-}
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
-}
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:72:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '3923938143'
-}
- POST /user/create-post 500 in 2172ms
- ✓ Compiled in 339ms
- ⨯ ./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx:3:1
-Export savePost doesn't exist in target module
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { savePost } [36mfrom[39m [32m"@/lib/actions/postActions"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { useActionState } [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m [33mUpsertPostForm[39m [36mfrom[39m [32m"./upsertPostForm"[39m[33m;[39m
- [90m 6 |[39m[0m
-
-The export savePost was not found in module [project]/apps/frontend/src/lib/actions/postActions.ts [app-client] (ecmascript).
-Did you mean to import saveNewPost?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import trace:
-  Server Component:
-    ./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx
-    ./apps/frontend/src/app/user/create-post/page.tsx
-
-
-
-./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx:3:1
-Export savePost doesn't exist in target module
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { savePost } [36mfrom[39m [32m"@/lib/actions/postActions"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { useActionState } [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m [33mUpsertPostForm[39m [36mfrom[39m [32m"./upsertPostForm"[39m[33m;[39m
- [90m 6 |[39m[0m
-
-The export savePost was not found in module [project]/apps/frontend/src/lib/actions/postActions.ts [app-ssr] (ecmascript).
-Did you mean to import saveNewPost?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import trace:
-  Server Component:
-    ./apps/frontend/src/app/user/create-post/_component/createPostContainer.tsx
-    ./apps/frontend/src/app/user/create-post/page.tsx
-
-
- ○ Compiling /_error ...
- ✓ Compiled in 2.4s
- ✓ Compiled /_error in 5.3s
- GET /user/create-post 500 in 6395ms
- GET /favicon.ico 500 in 194ms
- ✓ Compiled in 207ms
- ✓ Compiled in 208ms
- ✓ Compiled /user/create-post in 184ms
- GET /user/create-post 200 in 1317ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 349ms
- POST /user/create-post 200 in 175ms
-{
-  data: {
-    data: {
-      path: 'undefined_1761479062735',
-      id: 'f1d3c4a5-4619-4340-9752-f96eb348683f',
-      fullPath: 'thumbnails/undefined_1761479062735'
-    },
-    error: null
-  }
-}
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Variable "$createPostInput" of required type "CreatePostInput!" was not provided.',
-      locations: [Array],
-      extensions: [Object]
-    }
-  ]
-}
- ⨯ Error: Variable "$createPostInput" of required type "CreatePostInput!" was not provided.
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:71:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+ GET / 500 in 590ms
+ GET /favicon.ico 200 in 466ms
+ GET / 200 in 719ms
+ GET /auth/signin 200 in 195ms
+ GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1Nzc1NDYsImV4cCI6MTc2MTY2Mzk0Nn0.fgzmoMyUh65tKHuCY-Iq-oQMrTO87aA8VbURjoCY_ok 307 in 363ms

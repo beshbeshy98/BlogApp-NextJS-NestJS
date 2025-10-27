@@ -83,7 +83,6 @@ type Mutation {
 }
 
 input CreatePostInput {
-  postId: Int
   title: String!
   content: String!
   thumbnail: String
@@ -92,12 +91,12 @@ input CreatePostInput {
 }
 
 input UpdatePostInput {
-  postId: Int!
   title: String
   content: String
   thumbnail: String
   published: Boolean
   tags: [String!]
+  postId: Int!
 }
 
 input CreateUserInput {

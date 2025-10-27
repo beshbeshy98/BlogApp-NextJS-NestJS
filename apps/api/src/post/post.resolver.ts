@@ -19,7 +19,6 @@ export class PostResolver {
     @Args('take', { type: () => Int, nullable: true }) take?: number,
   ) {
     const user = context.req.user;
-    console.log({ user });
     return this.postService.findAll({ skip, take });
   }
   @Query(() => Int, { name: 'postCount' })

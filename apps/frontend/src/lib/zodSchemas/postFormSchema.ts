@@ -13,7 +13,7 @@ export const postFormSchema = z.object({
     .min(1)
     .refine((value) => value.split(",").every((tag) => tag.trim() !== ""))
     .transform((val) => val.split(",")),
-  thumbnail: z.instanceof(File).optional(),
+  thumbnail: z.any().optional(),
   published: z
     .any()
     .transform((val) => val === "on")

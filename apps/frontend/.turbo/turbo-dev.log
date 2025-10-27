@@ -9,93 +9,90 @@
 
  ✓ Starting...
  ○ Compiling middleware ...
- ✓ Compiled middleware in 585ms
- ✓ Ready in 3.2s
- ○ Compiling / ...
- ✓ Compiled / in 6.3s
- GET / 200 in 8207ms
- ✓ Compiled /api/auth/signout in 422ms
- GET /api/auth/signout 307 in 862ms
- GET / 200 in 560ms
- ○ Compiling /auth/signin ...
- ✓ Compiled /auth/signin in 884ms
- GET /auth/signin 200 in 1195ms
- ✓ Compiled /api/auth/google/callback in 241ms
- GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1NzY1NzcsImV4cCI6MTc2MTY2Mjk3N30.kEGWo99ZOM-NiM2otwQlDuFQrshr53MfBaaWORj7vas 307 in 666ms
- GET / 200 in 468ms
- GET /api/auth/signout 307 in 344ms
- GET / 200 in 620ms
- GET /auth/signin 200 in 229ms
- GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1NzY1OTcsImV4cCI6MTc2MTY2Mjk5N30.YiOgeVAnGdh8UpYX57OKEHdTtftUbVIV-Dgl0Oky_eM 307 in 363ms
- GET / 200 in 590ms
- ⨯ upstream image response timed out for https://picsum.photos/seed/FNshvoTh/640/480?grayscale
- GET / 200 in 1052ms
- ○ Compiling /favicon.ico ...
- ✓ Compiled /favicon.ico in 925ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 1493ms
- ⨯ upstream image response timed out for https://picsum.photos/seed/FNshvoTh/640/480?grayscale
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async fetchPosts (src\lib\actions\postActions.ts:27:16)
-    at async Home (src\app\page.tsx:11:33)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '2316049681',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
+ ✓ Compiled middleware in 587ms
+ ✓ Ready in 3.7s
+ ○ Compiling /user/create-post ...
+ ✓ Compiled /user/create-post in 6.1s
+ GET /user/create-post 200 in 7599ms
+ ✓ Compiled /favicon.ico in 438ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 908ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Bad Request Exception',
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
 }
- GET / 500 in 984ms
- GET /favicon.ico 200 in 1367ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 1377ms
- GET / 200 in 1129ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 507ms
- GET /api/auth/signout 307 in 428ms
- GET / 200 in 1186ms
- GET /auth/signin 200 in 382ms
- GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1NzczODYsImV4cCI6MTc2MTY2Mzc4Nn0.XHGsSIYqDzA9hT21oy40DHqA7T7XzOWJW71fCfn-qDA 307 in 491ms
- GET / 200 in 1424ms
- GET /api/auth/signout 307 in 425ms
- GET / 200 in 873ms
- GET /auth/signin 200 in 179ms
- GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1Nzc0MTUsImV4cCI6MTc2MTY2MzgxNX0.v4sJeQbONlhP-Ge3k3qLw5zrzoLUdEmFm8vactQ8D_0 307 in 365ms
- GET / 200 in 468ms
- GET /api/auth/signout 307 in 361ms
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async fetchPosts (src\lib\actions\postActions.ts:27:16)
-    at async Home (src\app\page.tsx:11:33)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '2316049681',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
+ ⨯ Error: Bad Request Exception
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async savePost (src\lib\actions\postActions.ts:72:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '4212858392'
 }
- GET / 500 in 407ms
- GET /favicon.ico 200 in 477ms
- ⨯ TypeError: fetch failed
-    at async fetchGraphQL (src\lib\fetchGraphQL.ts:5:20)
-    at async fetchPosts (src\lib\actions\postActions.ts:27:16)
-    at async Home (src\app\page.tsx:11:33)
-  3 |
-  4 | export const fetchGraphQL = async (query: string, variables = {}) => {
-> 5 |   const response = await fetch(`${BACKEND_URL}/graphql`, {
-    |                    ^
-  6 |     method: "POST",
-  7 |     headers: {
-  8 |       "Content-Type": "application/json", {
-  digest: '2316049681',
-  [cause]: [AggregateError: ] { code: 'ECONNREFUSED' }
+ POST /user/create-post 500 in 2431ms
+ ✓ Compiled in 198ms
+ ✓ Compiled /user/create-post in 141ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'optional')
+    at __TURBOPACK__module__evaluation__ (src\lib\zodSchemas\postFormSchema.ts:16:18)
+    at __TURBOPACK__module__evaluation__ (src\lib\actions\postActions.ts:17:1)
+    at __TURBOPACK__module__evaluation__ (.next-internal\server\app\user\create-post\page\actions.js (server actions loader):1:1)
+    at __TURBOPACK__module__evaluation__ (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\[root-of-the-server]__0dc3a596._.js:496:433)
+    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\user\create-post\page.js:21:3)
+  14 |     .refine((value) => value.split(",").every((tag) => tag.trim() !== ""))
+  15 |     .transform((val) => val.split(",")),
+> 16 |   thumbnail: z.a.optional(),
+     |                  ^
+  17 |   published: z
+  18 |     .any()
+  19 |     .transform((val) => val === "on") {
+  page: '/user/create-post'
 }
- GET / 500 in 590ms
- GET /favicon.ico 200 in 466ms
- GET / 200 in 719ms
- GET /auth/signin 200 in 195ms
- GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjE1Nzc1NDYsImV4cCI6MTc2MTY2Mzk0Nn0.fgzmoMyUh65tKHuCY-Iq-oQMrTO87aA8VbURjoCY_ok 307 in 363ms
+ ○ Compiling /_error ...
+ ✓ Compiled in 2.1s
+ ✓ Compiled in 625ms
+ ✓ Compiled /_error in 2.8s
+ GET /user/create-post 500 in 3801ms
+ GET /favicon.ico 200 in 346ms
+ ✓ Compiled /user/create-post in 121ms
+ GET /user/create-post 200 in 795ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 430ms
+GraphQL fetch failed: {
+  errors: [
+    {
+      message: 'Bad Request Exception',
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}
+ ⨯ Error: Bad Request Exception
+    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
+    at async savePost (src\lib\actions\postActions.ts:72:16)
+  42 |   if (result.errors || !result.data) {
+  43 |     console.error("GraphQL fetch failed:", result);
+> 44 |     throw new Error(
+     |           ^
+  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
+  46 |     );
+  47 |   } {
+  digest: '4212858392'
+}
+ POST /user/create-post 500 in 2349ms
+ GET /user/create-post 200 in 537ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 390ms
+ POST /user/create-post 200 in 1716ms
+ ○ Compiling /user/posts ...
+ ✓ Compiled /user/posts in 946ms
+ GET /user/posts 200 in 1400ms

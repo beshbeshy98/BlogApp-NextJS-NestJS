@@ -70,7 +70,7 @@ export async function savePost(
     thumbnailUrl = await uploadThumbnail(validatedFields.data.thumbnail);
 
   const data = await authFetchGraphQL(print(CREATE_POST_MUTATION), {
-    input: {
+    createPostInput: {
       ...validatedFields.data,
       thumbnail: thumbnailUrl,
     },
@@ -113,8 +113,6 @@ export async function updatePost(
     ok: false,
     data: Object.fromEntries(formData.entries()),
   };
-
-
 }
 export async function deletePost(postId: number): Promise<boolean> {
   const data = await authFetchGraphQL(print(DELETE_POST_MUTATION), {

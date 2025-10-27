@@ -10,8 +10,6 @@ export async function uploadThumbnail(image: File) {
     .from("thumbnails")
     .upload(`${image.name}_${Date.now()}`, image);
 
-  console.log({ data });
-
   if (!data.data?.path) throw new Error("failed to upload the file");
   const urlData = await supabase.storage
     .from("thumbnails")

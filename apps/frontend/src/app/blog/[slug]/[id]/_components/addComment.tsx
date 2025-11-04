@@ -35,6 +35,7 @@ const AddComment = (props: Props) => {
   const [state, action] = useActionState(saveComment, undefined);
 
   useEffect(() => {
+    if(state?.message)
     toast(state?.ok ? "Success" : "Error", {
       description: state?.message,
     });

@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 
 export const GET_POSTS = gql`
-  query posts($skip: Float, $take: Float) {
+  query posts($skip: Int!, $take: Int!) {
     posts(skip: $skip, take: $take) {
       id
       title
@@ -22,6 +22,7 @@ export const GET_POST_BY_ID = gql`
       thumbnail
       content
       createdAt
+      published
       author {
         name
       }
@@ -91,5 +92,46 @@ export const LIKE_POST_MUTATION = gql`
 export const UNLIKE_POST_MUTATION = gql`
   mutation unlikePost($postId: Int!) {
     unlikePost(postId: $postId)
+  }
+`;
+
+export const GET_USER_POSTS = gql`
+  query getUserPosts($take: Int!, $skip: Int!) {
+    getUserPosts(take: $take, skip: $skip) {
+      id
+      title
+      content
+      thumbnail
+      published
+      slug
+      createdAt
+      _count {
+        comments
+        likes
+      }
+    }
+    userPostCount
+  }
+`;
+
+export const CREATE_POST_MUTATION = gql`
+  mutation createPost($createPostInput: CreatePostInput!) {
+    createPost(createPostInput: $createPostInput) {
+      id
+    }
+  }
+`;
+
+export const UPDATE_POST_MUTATION = gql`
+  mutation updatePost($updatePostInput: UpdatePostInput!) {
+    updatePost(updatePostInput: $updatePostInput) {
+      id
+    }
+  }
+`;
+
+export const DELETE_POST_MUTATION = gql`
+  mutation deletePost($postId: Int!) {
+    deletePost(postId: $postId)
   }
 `;

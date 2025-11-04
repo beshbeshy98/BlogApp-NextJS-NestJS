@@ -60,9 +60,11 @@ type AuthPayload {
 }
 
 type Query {
-  posts(skip: Float, take: Float): [Post!]!
+  posts(skip: Int, take: Int): [Post!]!
   postCount: Int!
   getPostById(id: Int!): Post!
+  getUserPosts(skip: Int, take: Int): [Post!]!
+  userPostCount: Int!
   getPostComments(postId: Int!, take: Int = 12, skip: Int = 0): [CommentEntity!]!
   commentPostCount(postId: Int!): Int!
   postLikesCount(postId: Int!): Int!
@@ -70,11 +72,31 @@ type Query {
 }
 
 type Mutation {
+  createPost(createPostInput: CreatePostInput!): Post!
+  updatePost(updatePostInput: UpdatePostInput!): Post!
+  deletePost(postId: Int!): Boolean!
   createUser(createUserInput: CreateUserInput!): User!
   createComment(createCommentInput: CreateCommentInput!): CommentEntity!
   likePost(postId: Int!): Boolean!
   unlikePost(postId: Int!): Boolean!
   signIn(signInInput: SignInInput!): AuthPayload!
+}
+
+input CreatePostInput {
+  title: String!
+  content: String!
+  thumbnail: String
+  published: Boolean!
+  tags: [String!]!
+}
+
+input UpdatePostInput {
+  title: String
+  content: String
+  thumbnail: String
+  published: Boolean
+  tags: [String!]
+  postId: Int!
 }
 
 input CreateUserInput {

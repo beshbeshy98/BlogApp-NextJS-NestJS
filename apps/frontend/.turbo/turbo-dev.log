@@ -4,95 +4,15 @@
 
    ▲ Next.js 15.5.4 (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://172.18.80.1:3000
+   - Network:      http://172.29.16.1:3000
    - Environments: .env
 
  ✓ Starting...
- ○ Compiling middleware ...
- ✓ Compiled middleware in 587ms
- ✓ Ready in 3.7s
- ○ Compiling /user/create-post ...
- ✓ Compiled /user/create-post in 6.1s
- GET /user/create-post 200 in 7599ms
- ✓ Compiled /favicon.ico in 438ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 908ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
-}
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:72:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '4212858392'
-}
- POST /user/create-post 500 in 2431ms
- ✓ Compiled in 198ms
- ✓ Compiled /user/create-post in 141ms
- ⨯ TypeError: Cannot read properties of undefined (reading 'optional')
-    at __TURBOPACK__module__evaluation__ (src\lib\zodSchemas\postFormSchema.ts:16:18)
-    at __TURBOPACK__module__evaluation__ (src\lib\actions\postActions.ts:17:1)
-    at __TURBOPACK__module__evaluation__ (.next-internal\server\app\user\create-post\page\actions.js (server actions loader):1:1)
-    at __TURBOPACK__module__evaluation__ (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\chunks\ssr\[root-of-the-server]__0dc3a596._.js:496:433)
-    at Object.<anonymous> (E:\Programming\Web Dev\My own projects\blog-turborepo\apps\frontend\.next\server\app\user\create-post\page.js:21:3)
-  14 |     .refine((value) => value.split(",").every((tag) => tag.trim() !== ""))
-  15 |     .transform((val) => val.split(",")),
-> 16 |   thumbnail: z.a.optional(),
-     |                  ^
-  17 |   published: z
-  18 |     .any()
-  19 |     .transform((val) => val === "on") {
-  page: '/user/create-post'
-}
- ○ Compiling /_error ...
- ✓ Compiled in 2.1s
- ✓ Compiled in 625ms
- ✓ Compiled /_error in 2.8s
- GET /user/create-post 500 in 3801ms
- GET /favicon.ico 200 in 346ms
- ✓ Compiled /user/create-post in 121ms
- GET /user/create-post 200 in 795ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 430ms
-GraphQL fetch failed: {
-  errors: [
-    {
-      message: 'Bad Request Exception',
-      locations: [Array],
-      path: [Array],
-      extensions: [Object]
-    }
-  ],
-  data: null
-}
- ⨯ Error: Bad Request Exception
-    at authFetchGraphQL (src\lib\fetchGraphQL.ts:44:11)
-    at async savePost (src\lib\actions\postActions.ts:72:16)
-  42 |   if (result.errors || !result.data) {
-  43 |     console.error("GraphQL fetch failed:", result);
-> 44 |     throw new Error(
-     |           ^
-  45 |       result.errors?.[0]?.message || "Failed to fetch GraphQL data"
-  46 |     );
-  47 |   } {
-  digest: '4212858392'
-}
- POST /user/create-post 500 in 2349ms
- GET /user/create-post 200 in 537ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 390ms
- POST /user/create-post 200 in 1716ms
+ ✓ Compiled middleware in 495ms
+ ✓ Ready in 3.5s
  ○ Compiling /user/posts ...
- ✓ Compiled /user/posts in 946ms
- GET /user/posts 200 in 1400ms
+ ✓ Compiled /user/posts in 8.3s
+ GET /user/posts 200 in 10625ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 550ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 988ms

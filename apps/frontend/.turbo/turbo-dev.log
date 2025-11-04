@@ -8,11 +8,82 @@
    - Environments: .env
 
  ✓ Starting...
- ✓ Compiled middleware in 495ms
- ✓ Ready in 3.5s
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 578ms
+ ✓ Ready in 3.3s
  ○ Compiling /user/posts ...
- ✓ Compiled /user/posts in 8.3s
- GET /user/posts 200 in 10625ms
+ ✓ Compiled /user/posts in 6s
+ GET /user/posts 200 in 8514ms
  ○ Compiling /favicon.ico ...
- ✓ Compiled /favicon.ico in 550ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 988ms
+ ✓ Compiled /favicon.ico in 596ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1124ms
+ ○ Compiling /user/posts/(.)[id]/delete ...
+ ✓ Compiled /user/posts/(.)[id]/delete in 864ms
+ GET /user/posts/98/delete 200 in 2154ms
+ GET /user/posts 200 in 1071ms
+ ○ Compiling / ...
+ ✓ Compiled / in 701ms
+ GET / 200 in 949ms
+ ✓ Compiled /api/auth/signout in 354ms
+ GET /api/auth/signout 307 in 774ms
+ GET / 200 in 716ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 1091ms
+ GET /auth/signin 200 in 1362ms
+ ✓ Compiled /api/auth/google/callback in 270ms
+ GET /api/auth/google/callback?userId=11&name=Mohamed%20Abd%20Elbadea&avatar=https://lh3.googleusercontent.com/a-/ALV-UjVnUaXGV9aVIf5xJASFZdAxyNQTJxoJX06Eek1nDO0p6JlR-XHJvFwa5HDPf90y0caiM6Dld__URzv1piuoBBy3jr97HQ_xvy95oBO0HYQAk8JcOcdNYSTjKzevOvYfQMccJYigjNce5KNoF8LXzv9-1gu4j_O-sawczoqRc6SP29FkOhfVgpK9Nv1gZ21RIJFC3UZrdBVKNB_QM3ojP-5AZIFHwVcFHb90uLPMQqph5nDgK2ZVW6pnBCL4t4uNFDmF0GVbIWyStpVspQQ8n6GHexf23RyYrUO3MWMF31j70QzCzOAgfsrA0300FkMXYjhM7aMAbsaR05kbMJaQQtWwF9K0DUWxazTaYf3bUeW2Id7uo8vO8I1JsSz30ZBeAN1Rft5LCanvf3c_FCen-w_SE5iRpIUtb2b5w2VUMNVJ_gbfxXoMW9C7YMytzNCfcsj9FHRxtsehEBHh_wAiucLsDi06Q-5vyzferP2RxHgPdLsk1A0-DV1H213n1vmawJJKdPAqM7G1WqcRH_qqO0r9UAPSuy4FB1EOptAWMY3JwKt7OZG9qnwPkX84IiTfN_3Q1GuHyy8tbFAj9Gy6tzMC5j_vZBNtM3lmLUqbCY-rbXN09JcMz4gsm_vYxYjCgczqCy66yhu9nxmXQfZXLDaMhWq_c16lzf_XIa1_8vnwaliRkc80IbfYJnUv8krIj_5LYBwV5ov6HWPAyXtDm-1W_duMfISf91zfd1Fo4V4Kxcd1Y_O625nAu5El27HSLmwGd23fhYSFLCCTEehvgx1JebS6esI2iNLqUm-yxuyhGzgDVY7VpTahjO2vlZa3XRjo9dQmSyHU-p-XccifNWpR9FFqRljve-KYRBMVaaxX3HYRCBdEoL574x97ODDJpDBUsI_qck5s_PmU_5Wzg13Ek-cI_0mrRfN2ieZ7eDt-OE3lw0DPPyuzXDsZFbiyhxPTjbMFAkQ_QjNbrcF7XeKrzxJylTLdBi3HqUEtZjvY-1bdGZ5RSmjDH1W-si9ZnyTM3CtmAEMpc3ZnniyE_bW4V8o-RmjwE6XOWtf3DYUBjvOUvNV1EtNu=s96-c&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExLCJpYXQiOjE3NjIyODYzMzEsImV4cCI6MTc2MjM3MjczMX0.L9TYao0B2er5zqAgT707Xft3nu1XAmhRhXP-LofXoUM 307 in 672ms
+ GET / 200 in 555ms
+ GET /api/auth/signout 307 in 517ms
+ GET / 200 in 635ms
+ GET /auth/signin 200 in 209ms
+ GET / 200 in 459ms
+ POST /auth/signin 303 in 855ms
+ ○ Compiling /blog/[slug]/[id] ...
+ ✓ Compiled /blog/[slug]/[id] in 1194ms
+ GET /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 2782ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 249ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 251ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 196ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 222ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 257ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 273ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 215ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 208ms
+ GET / 200 in 313ms
+ GET /?page=2 200 in 272ms
+ GET /?page=34 200 in 273ms
+ GET /user/posts 200 in 630ms
+ GET /user/posts?page=2 200 in 450ms
+ ○ Compiling /user/posts/[id]/update ...
+ ✓ Compiled /user/posts/[id]/update in 872ms
+ GET /user/posts/229/update 200 in 2398ms
+ POST /user/posts/229/update 200 in 1717ms
+ GET /user/posts?page=2 200 in 1445ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 465ms
+ GET /user/posts/229/delete 200 in 277ms
+ POST /user/posts/229/delete 200 in 1279ms
+ GET /user/posts 200 in 1918ms
+ ○ Compiling /user/create-post ...
+ ✓ Compiled /user/create-post in 718ms
+ GET /user/create-post 200 in 966ms
+ POST /user/create-post 200 in 1353ms
+ GET /user/posts 200 in 416ms
+ GET / 200 in 344ms
+ GET /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 238ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 273ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 190ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 187ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 309ms
+ ✓ Compiled in 242ms
+ ✓ Compiled in 192ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 732ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 225ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 177ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 212ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 261ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 250ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 238ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 289ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 170ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 236ms
+ POST /blog/cinis-accendo-amiculum-tantum-placeat-cunae-conicio-sumo-cuppedia-admiratio/2 200 in 312ms

@@ -40,7 +40,7 @@ const AddComment = (props: Props) => {
       description: state?.message,
     });
     if (state?.ok) props.refetch();
-  });
+  },[state]);
   return (
     <div>
       <Dialog open={state?.open}>
